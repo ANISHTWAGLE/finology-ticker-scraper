@@ -1,0 +1,31 @@
+{
+  "$defs": {
+    "Basis": {
+      "enum": [
+        "standalone",
+        "consolidated"
+      ],
+      "title": "Basis",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "company": {
+      "description": "Finology company URL or company-page slug, such as TCS.",
+      "maxLength": 2048,
+      "minLength": 1,
+      "title": "Company",
+      "type": "string"
+    },
+    "reporting_basis": {
+      "$ref": "#/$defs/Basis"
+    }
+  },
+  "required": [
+    "company",
+    "reporting_basis"
+  ],
+  "title": "ScrapeRequest",
+  "type": "object"
+}

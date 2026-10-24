@@ -1,0 +1,4870 @@
+{
+  "schema_version": "1.0",
+  "status": "complete_with_warnings",
+  "company": {
+    "identifier": "INFY",
+    "name": "Infosys Ltd.",
+    "nse_symbol": "INFY",
+    "bse_code": "500209"
+  },
+  "requested_reporting_basis": "standalone",
+  "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+  "scraped_at": "2026-10-24T10:22:05.907435Z",
+  "sections": {
+    "shareholding_pattern": {
+      "name": "Shareholding pattern",
+      "status": "warning",
+      "tables": [
+        {
+          "name": "Shareholding Pattern",
+          "source_format": "chart",
+          "source_url": "https://ticker.finology.in/GetShares.ashx?v=4.0&fincode=100209",
+          "scraped_at": "2026-10-24T10:22:06.050050Z",
+          "reporting_basis": null,
+          "periods": [
+            null
+          ],
+          "context": {
+            "currency": null,
+            "unit": "%",
+            "stated_text": "Chart legend percentages"
+          },
+          "notes": [],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "DII",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": null
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": null,
+                  "raw_text": "42.87%",
+                  "numeric_value": 42.87,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "FII",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": null
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": null,
+                  "raw_text": "27.44%",
+                  "numeric_value": 27.44,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 2,
+              "metric_label": "Public",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": null
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": null,
+                  "raw_text": "15.78%",
+                  "numeric_value": 15.78,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 3,
+              "metric_label": "Promoters",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": null
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": null,
+                  "raw_text": "13.9%",
+                  "numeric_value": 13.9,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 4,
+              "metric_label": "Others",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": null
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": null,
+                  "raw_text": "0%",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Promoter Pledging %",
+          "source_format": "html_table",
+          "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+          "scraped_at": "2026-10-24T10:22:05.907435Z",
+          "reporting_basis": null,
+          "periods": [
+            "Sep 2026",
+            "Jun 2026",
+            "Mar 2026",
+            "Dec 2025",
+            "Sep 2025"
+          ],
+          "context": {
+            "currency": null,
+            "unit": "%",
+            "stated_text": "% of equity capital"
+          },
+          "notes": [],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "Promoter %",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "Promoter %"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2026",
+                  "raw_text": "13.90",
+                  "numeric_value": 13.9,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Jun 2026",
+                  "raw_text": "13.82",
+                  "numeric_value": 13.82,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "14.38",
+                  "numeric_value": 14.38,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Dec 2025",
+                  "raw_text": "14.52",
+                  "numeric_value": 14.52,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2025",
+                  "raw_text": "14.30",
+                  "numeric_value": 14.3,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "Pledge %",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "Pledge %"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2026",
+                  "raw_text": "0.00",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Jun 2026",
+                  "raw_text": "0.00",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "0.00",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Dec 2025",
+                  "raw_text": "0.00",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2025",
+                  "raw_text": "0.00",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Investors Details — Promoter",
+          "source_format": "html_table",
+          "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+          "scraped_at": "2026-10-24T10:22:05.907435Z",
+          "reporting_basis": null,
+          "periods": [
+            "Sep 2025 %",
+            "Dec 2025 %",
+            "Mar 2026 %",
+            "Jun 2026 %",
+            "Sep 2026 %"
+          ],
+          "context": {
+            "currency": null,
+            "unit": "%",
+            "stated_text": "% in period column headings"
+          },
+          "notes": [],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "promoters",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "14.30",
+                  "numeric_value": 14.3,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "14.52",
+                  "numeric_value": 14.52,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "14.38",
+                  "numeric_value": 14.38,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "13.82",
+                  "numeric_value": 13.82,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "13.90",
+                  "numeric_value": 13.9,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "akshata murty",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.03",
+                  "numeric_value": 1.03,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.05",
+                  "numeric_value": 1.05,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.04",
+                  "numeric_value": 1.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.04",
+                  "numeric_value": 1.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.05",
+                  "numeric_value": 1.05,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 2,
+              "metric_label": "asha dinesh",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.02",
+                  "numeric_value": 1.02,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.04",
+                  "numeric_value": 1.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.03",
+                  "numeric_value": 1.03,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.03",
+                  "numeric_value": 1.03,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.04",
+                  "numeric_value": 1.04,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 3,
+              "metric_label": "deeksha dinesh",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.20",
+                  "numeric_value": 0.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.21",
+                  "numeric_value": 0.21,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.20",
+                  "numeric_value": 0.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.20",
+                  "numeric_value": 0.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.21",
+                  "numeric_value": 0.21,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 4,
+              "metric_label": "dinesh krishnaswamy",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.86",
+                  "numeric_value": 0.86,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.87",
+                  "numeric_value": 0.87,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.87",
+                  "numeric_value": 0.87,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.87",
+                  "numeric_value": 0.87,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.87",
+                  "numeric_value": 0.87,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 5,
+              "metric_label": "divya dinesh",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.20",
+                  "numeric_value": 0.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.21",
+                  "numeric_value": 0.21,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.20",
+                  "numeric_value": 0.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.20",
+                  "numeric_value": 0.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.21",
+                  "numeric_value": 0.21,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 6,
+              "metric_label": "ekagrah rohan murty",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.04",
+                  "numeric_value": 0.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.04",
+                  "numeric_value": 0.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.04",
+                  "numeric_value": 0.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.04",
+                  "numeric_value": 0.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.04",
+                  "numeric_value": 0.04,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 7,
+              "metric_label": "gaurav manchanda",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.15",
+                  "numeric_value": 0.15,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.15",
+                  "numeric_value": 0.15,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.15",
+                  "numeric_value": 0.15,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 8,
+              "metric_label": "janhavi nilekani",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 9,
+              "metric_label": "kumari shibulal",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.13",
+                  "numeric_value": 0.13,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.13",
+                  "numeric_value": 0.13,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.13",
+                  "numeric_value": 0.13,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.13",
+                  "numeric_value": 0.13,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.13",
+                  "numeric_value": 0.13,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 10,
+              "metric_label": "meghana gopalakrishnan",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.39",
+                  "numeric_value": 0.39,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.40",
+                  "numeric_value": 0.4,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.40",
+                  "numeric_value": 0.4,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.40",
+                  "numeric_value": 0.4,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.40",
+                  "numeric_value": 0.4,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 11,
+              "metric_label": "milan shibulal manchanda",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 12,
+              "metric_label": "nandan m nilekani",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.08",
+                  "numeric_value": 1.08,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.10",
+                  "numeric_value": 1.1,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.09",
+                  "numeric_value": 1.09,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.09",
+                  "numeric_value": 1.09,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.10",
+                  "numeric_value": 1.1,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 13,
+              "metric_label": "narayana murthy",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.40",
+                  "numeric_value": 0.4,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.41",
+                  "numeric_value": 0.41,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.40",
+                  "numeric_value": 0.4,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.40",
+                  "numeric_value": 0.4,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.41",
+                  "numeric_value": 0.41,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 14,
+              "metric_label": "nihar nilekani",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.33",
+                  "numeric_value": 0.33,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.34",
+                  "numeric_value": 0.34,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.34",
+                  "numeric_value": 0.34,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.34",
+                  "numeric_value": 0.34,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.34",
+                  "numeric_value": 0.34,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 15,
+              "metric_label": "nikita shibulal manchanda...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.16",
+                  "numeric_value": 0.16,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 16,
+              "metric_label": "rohan murty",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.60",
+                  "numeric_value": 1.6,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.64",
+                  "numeric_value": 1.64,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.62",
+                  "numeric_value": 1.62,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.63",
+                  "numeric_value": 1.63,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.64",
+                  "numeric_value": 1.64,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 17,
+              "metric_label": "rohini nilekani",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.91",
+                  "numeric_value": 0.91,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.92",
+                  "numeric_value": 0.92,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.92",
+                  "numeric_value": 0.92,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.92",
+                  "numeric_value": 0.92,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.92",
+                  "numeric_value": 0.92,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 18,
+              "metric_label": "s d shibulal",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.14",
+                  "numeric_value": 0.14,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.14",
+                  "numeric_value": 0.14,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.14",
+                  "numeric_value": 0.14,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.14",
+                  "numeric_value": 0.14,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.14",
+                  "numeric_value": 0.14,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 19,
+              "metric_label": "s gopalakrishnan",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.84",
+                  "numeric_value": 0.84,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.86",
+                  "numeric_value": 0.86,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.85",
+                  "numeric_value": 0.85,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.85",
+                  "numeric_value": 0.85,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.86",
+                  "numeric_value": 0.86,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 20,
+              "metric_label": "shray chandra",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.02",
+                  "numeric_value": 0.02,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.02",
+                  "numeric_value": 0.02,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.02",
+                  "numeric_value": 0.02,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.02",
+                  "numeric_value": 0.02,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.02",
+                  "numeric_value": 0.02,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 21,
+              "metric_label": "shruti shibulal",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.23",
+                  "numeric_value": 0.23,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 22,
+              "metric_label": "sudha gopalakrishnan",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "2.52",
+                  "numeric_value": 2.52,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "2.57",
+                  "numeric_value": 2.57,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "2.54",
+                  "numeric_value": 2.54,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "2.55",
+                  "numeric_value": 2.55,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "2.57",
+                  "numeric_value": 2.57,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 23,
+              "metric_label": "sudha n murty",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.91",
+                  "numeric_value": 0.91,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.93",
+                  "numeric_value": 0.93,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.92",
+                  "numeric_value": 0.92,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.92",
+                  "numeric_value": 0.92,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.93",
+                  "numeric_value": 0.93,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 24,
+              "metric_label": "tanush nilekani chandra",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.09",
+                  "numeric_value": 0.09,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.09",
+                  "numeric_value": 0.09,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.09",
+                  "numeric_value": 0.09,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "0.09",
+                  "numeric_value": 0.09,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.09",
+                  "numeric_value": 0.09,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 25,
+              "metric_label": "bhairavi madhusudhan shib...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.14",
+                  "numeric_value": 0.14,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.13",
+                  "numeric_value": 0.13,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.13",
+                  "numeric_value": 0.13,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                }
+              ]
+            },
+            {
+              "row_index": 26,
+              "metric_label": "shreyas shibulal",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "0.53",
+                  "numeric_value": 0.53,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.48",
+                  "numeric_value": 0.48,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.48",
+                  "numeric_value": 0.48,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Investors Details — Investors",
+          "source_format": "html_table",
+          "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+          "scraped_at": "2026-10-24T10:22:05.907435Z",
+          "reporting_basis": null,
+          "periods": [
+            "Sep 2025 %",
+            "Dec 2025 %",
+            "Mar 2026 %",
+            "Jun 2026 %",
+            "Sep 2026 %"
+          ],
+          "context": {
+            "currency": null,
+            "unit": "%",
+            "stated_text": "% in period column headings"
+          },
+          "notes": [],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "investors",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "85.70",
+                  "numeric_value": 85.7,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "85.48",
+                  "numeric_value": 85.48,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "85.62",
+                  "numeric_value": 85.62,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "86.18",
+                  "numeric_value": 86.18,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "86.10",
+                  "numeric_value": 86.1,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "hdfc mutual fund",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.81",
+                  "numeric_value": 1.81,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.86",
+                  "numeric_value": 1.86,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "2.04",
+                  "numeric_value": 2.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.89",
+                  "numeric_value": 1.89,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.71",
+                  "numeric_value": 1.71,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 2,
+              "metric_label": "icici prudential mutual f...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "4.53",
+                  "numeric_value": 4.53,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "4.11",
+                  "numeric_value": 4.11,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "4.74",
+                  "numeric_value": 4.74,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "4.92",
+                  "numeric_value": 4.92,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "3.95",
+                  "numeric_value": 3.95,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 3,
+              "metric_label": "investor education and pr...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "0.02",
+                  "numeric_value": 0.02,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "0.04",
+                  "numeric_value": 0.04,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "0.04",
+                  "numeric_value": 0.04,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 4,
+              "metric_label": "life insurance corporatio...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "10.89",
+                  "numeric_value": 10.89,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "11.28",
+                  "numeric_value": 11.28,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "11.54",
+                  "numeric_value": 11.54,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "11.73",
+                  "numeric_value": 11.73,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "11.80",
+                  "numeric_value": 11.8,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 5,
+              "metric_label": "national pension system t...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "2.35",
+                  "numeric_value": 2.35,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "2.69",
+                  "numeric_value": 2.69,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "2.99",
+                  "numeric_value": 2.99,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "3.20",
+                  "numeric_value": 3.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "3.38",
+                  "numeric_value": 3.38,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 6,
+              "metric_label": "nippon life india trustee...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.80",
+                  "numeric_value": 1.8,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.77",
+                  "numeric_value": 1.77,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "2.24",
+                  "numeric_value": 2.24,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "2.20",
+                  "numeric_value": 2.2,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "2.65",
+                  "numeric_value": 2.65,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 7,
+              "metric_label": "parag parikh mutual fund",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.13",
+                  "numeric_value": 1.13,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.17",
+                  "numeric_value": 1.17,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 8,
+              "metric_label": "sbi life insurance co. lt...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.38",
+                  "numeric_value": 1.38,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.35",
+                  "numeric_value": 1.35,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.41",
+                  "numeric_value": 1.41,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.31",
+                  "numeric_value": 1.31,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.27",
+                  "numeric_value": 1.27,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 9,
+              "metric_label": "sbi mutual fund",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "4.54",
+                  "numeric_value": 4.54,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "4.66",
+                  "numeric_value": 4.66,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "4.66",
+                  "numeric_value": 4.66,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "4.37",
+                  "numeric_value": 4.37,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "4.51",
+                  "numeric_value": 4.51,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 10,
+              "metric_label": "uti mutual fund",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.88",
+                  "numeric_value": 1.88,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.81",
+                  "numeric_value": 1.81,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.77",
+                  "numeric_value": 1.77,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.73",
+                  "numeric_value": 1.73,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.93",
+                  "numeric_value": 1.93,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 11,
+              "metric_label": "vanguard emerging markets...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.23",
+                  "numeric_value": 1.23,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.28",
+                  "numeric_value": 1.28,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.27",
+                  "numeric_value": 1.27,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.26",
+                  "numeric_value": 1.26,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.35",
+                  "numeric_value": 1.35,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 12,
+              "metric_label": "vanguard total internatio...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.35",
+                  "numeric_value": 1.35,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "1.38",
+                  "numeric_value": 1.38,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.34",
+                  "numeric_value": 1.34,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "1.33",
+                  "numeric_value": 1.33,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "1.41",
+                  "numeric_value": 1.41,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 13,
+              "metric_label": "aditya birla sun life mut...",
+              "context": {
+                "currency": null,
+                "unit": "%",
+                "stated_text": "% in period column headings"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025 %",
+                  "raw_text": "1.11",
+                  "numeric_value": 1.11,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026 %",
+                  "raw_text": "1.10",
+                  "numeric_value": 1.1,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026 %",
+                  "raw_text": "-",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "source_marker"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "code": "period_unstated",
+          "message": "The source chart and endpoint do not state a reporting period. period is null, as approved; no date was inferred."
+        }
+      ],
+      "errors": []
+    },
+    "quarterly_results": {
+      "name": "Quarterly results",
+      "status": "ok",
+      "tables": [
+        {
+          "name": "Quarterly Result (All Figures in Cr.)",
+          "source_format": "html_table",
+          "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+          "scraped_at": "2026-10-24T10:22:05.907435Z",
+          "reporting_basis": "standalone",
+          "periods": [
+            "Sep 2025",
+            "Dec 2025",
+            "Mar 2026",
+            "Jun 2026",
+            "Sep 2026"
+          ],
+          "context": {
+            "currency": null,
+            "unit": "Cr.",
+            "stated_text": "Quarterly Result (All Figures in Cr.)"
+          },
+          "notes": [],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "Net Sales",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "36,907",
+                  "numeric_value": 36907,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "37,996",
+                  "numeric_value": 37996,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "38,641",
+                  "numeric_value": 38641,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "39,957",
+                  "numeric_value": 39957,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "40,719",
+                  "numeric_value": 40719,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "Total Expenditure",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "28,059",
+                  "numeric_value": 28059,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "28,826",
+                  "numeric_value": 28826,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "29,093",
+                  "numeric_value": 29093,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "29,996",
+                  "numeric_value": 29996,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "30,796",
+                  "numeric_value": 30796,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 2,
+              "metric_label": "Operating Profit",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "8,848",
+                  "numeric_value": 8848,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "9,170",
+                  "numeric_value": 9170,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "9,548",
+                  "numeric_value": 9548,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "9,961",
+                  "numeric_value": 9961,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "9,923",
+                  "numeric_value": 9923,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 3,
+              "metric_label": "Other Income",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "2,268",
+                  "numeric_value": 2268,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "2,277",
+                  "numeric_value": 2277,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "1,063",
+                  "numeric_value": 1063,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "874",
+                  "numeric_value": 874,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "1,702",
+                  "numeric_value": 1702,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 4,
+              "metric_label": "Interest",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "52",
+                  "numeric_value": 52,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "45",
+                  "numeric_value": 45,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "54",
+                  "numeric_value": 54,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "61",
+                  "numeric_value": 61,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "58",
+                  "numeric_value": 58,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 5,
+              "metric_label": "Depreciation",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "595",
+                  "numeric_value": 595,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "585",
+                  "numeric_value": 585,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "601",
+                  "numeric_value": 601,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "613",
+                  "numeric_value": 613,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "662",
+                  "numeric_value": 662,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 6,
+              "metric_label": "Exceptional Items",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "-1,146",
+                  "numeric_value": -1146,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 7,
+              "metric_label": "Profit Before Tax",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "10,469",
+                  "numeric_value": 10469,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "9,671",
+                  "numeric_value": 9671,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "9,956",
+                  "numeric_value": 9956,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "10,161",
+                  "numeric_value": 10161,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "10,905",
+                  "numeric_value": 10905,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 8,
+              "metric_label": "Tax",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "2,710",
+                  "numeric_value": 2710,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "2,308",
+                  "numeric_value": 2308,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "1,981",
+                  "numeric_value": 1981,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "2,912",
+                  "numeric_value": 2912,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "3,012",
+                  "numeric_value": 3012,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 9,
+              "metric_label": "Profit After Tax",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Quarterly Result (All Figures in Cr.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "7,759",
+                  "numeric_value": 7759,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "7,363",
+                  "numeric_value": 7363,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "7,975",
+                  "numeric_value": 7975,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "7,249",
+                  "numeric_value": 7249,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "7,893",
+                  "numeric_value": 7893,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 10,
+              "metric_label": "Adjusted EPS (Rs)",
+              "context": {
+                "currency": "Rs",
+                "unit": "Rs",
+                "stated_text": "Adjusted EPS (Rs)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Sep 2025",
+                  "raw_text": "18.68",
+                  "numeric_value": 18.68,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Dec 2025",
+                  "raw_text": "18.16",
+                  "numeric_value": 18.16,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2026",
+                  "raw_text": "19.67",
+                  "numeric_value": 19.67,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Jun 2026",
+                  "raw_text": "17.87",
+                  "numeric_value": 17.87,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Sep 2026",
+                  "raw_text": "19.45",
+                  "numeric_value": 19.45,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    "profit_and_loss": {
+      "name": "Profit and loss",
+      "status": "ok",
+      "tables": [
+        {
+          "name": "Profit & Loss (All Figures in Cr. Adjusted EPS in Rs.)",
+          "source_format": "html_table",
+          "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+          "scraped_at": "2026-10-24T10:22:05.907435Z",
+          "reporting_basis": "standalone",
+          "periods": [
+            "Mar 2022",
+            "Mar 2023",
+            "Mar 2024",
+            "Mar 2025",
+            "Mar 2026"
+          ],
+          "context": {
+            "currency": null,
+            "unit": "Cr.",
+            "stated_text": "Profit & Loss (All Figures in Cr. "
+          },
+          "notes": [],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "Net Sales",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "1,03,940",
+                  "numeric_value": 103940,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "1,24,014",
+                  "numeric_value": 124014,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "1,28,933",
+                  "numeric_value": 128933,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "1,36,592",
+                  "numeric_value": 136592,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "1,48,819",
+                  "numeric_value": 148819,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "Total Expenditure",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "76,112",
+                  "numeric_value": 76112,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "93,851",
+                  "numeric_value": 93851,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "97,176",
+                  "numeric_value": 97176,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "1,03,420",
+                  "numeric_value": 103420,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "1,15,394",
+                  "numeric_value": 115394,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 2,
+              "metric_label": "Operating Profit",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "27,828",
+                  "numeric_value": 27828,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "30,163",
+                  "numeric_value": 30163,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "31,757",
+                  "numeric_value": 31757,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "33,172",
+                  "numeric_value": 33172,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "33,425",
+                  "numeric_value": 33425,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 3,
+              "metric_label": "Other Income",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "3,224",
+                  "numeric_value": 3224,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "4,390",
+                  "numeric_value": 4390,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "7,417",
+                  "numeric_value": 7417,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "5,109",
+                  "numeric_value": 5109,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "9,079",
+                  "numeric_value": 9079,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 4,
+              "metric_label": "Interest",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "128",
+                  "numeric_value": 128,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "157",
+                  "numeric_value": 157,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "277",
+                  "numeric_value": 277,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "221",
+                  "numeric_value": 221,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "207",
+                  "numeric_value": 207,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 5,
+              "metric_label": "Depreciation",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "2,429",
+                  "numeric_value": 2429,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "2,753",
+                  "numeric_value": 2753,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "2,944",
+                  "numeric_value": 2944,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "2,619",
+                  "numeric_value": 2619,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "2,394",
+                  "numeric_value": 2394,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 6,
+              "metric_label": "Exceptional Items",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "-1,146",
+                  "numeric_value": -1146,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 7,
+              "metric_label": "Profit Before Tax",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "28,495",
+                  "numeric_value": 28495,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "31,643",
+                  "numeric_value": 31643,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "35,953",
+                  "numeric_value": 35953,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "35,441",
+                  "numeric_value": 35441,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "38,757",
+                  "numeric_value": 38757,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 8,
+              "metric_label": "Provision for Tax",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "7,260",
+                  "numeric_value": 7260,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "8,375",
+                  "numeric_value": 8375,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "8,719",
+                  "numeric_value": 8719,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "9,873",
+                  "numeric_value": 9873,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "9,546",
+                  "numeric_value": 9546,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 9,
+              "metric_label": "Net Profit",
+              "context": {
+                "currency": null,
+                "unit": "Cr.",
+                "stated_text": "Profit & Loss (All Figures in Cr. "
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "21,235",
+                  "numeric_value": 21235,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "23,268",
+                  "numeric_value": 23268,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "27,234",
+                  "numeric_value": 27234,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "25,568",
+                  "numeric_value": 25568,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "29,211",
+                  "numeric_value": 29211,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 10,
+              "metric_label": "Adjusted EPS (Rs.)",
+              "context": {
+                "currency": "Rs.",
+                "unit": "Rs.",
+                "stated_text": "Adjusted EPS (Rs.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "50.49",
+                  "numeric_value": 50.49,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "56.09",
+                  "numeric_value": 56.09,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "65.62",
+                  "numeric_value": 65.62,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "61.58",
+                  "numeric_value": 61.58,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "72.05",
+                  "numeric_value": 72.05,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    "balance_sheet": {
+      "name": "Balance sheet",
+      "status": "ok",
+      "tables": [
+        {
+          "name": "Balance Sheet (All Figures are in Crores.)",
+          "source_format": "html_table",
+          "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+          "scraped_at": "2026-10-24T10:22:05.907435Z",
+          "reporting_basis": "standalone",
+          "periods": [
+            "Mar 2022",
+            "Mar 2023",
+            "Mar 2024",
+            "Mar 2025",
+            "Mar 2026"
+          ],
+          "context": {
+            "currency": null,
+            "unit": "Crores.",
+            "stated_text": "Balance Sheet (All Figures are in Crores.)"
+          },
+          "notes": [
+            "* Other Non-current Liabilities include Net deferred Liabilities"
+          ],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "Equity and Liabilities",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "Share Capital",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "2,103",
+                  "numeric_value": 2103,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "2,074",
+                  "numeric_value": 2074,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "2,075",
+                  "numeric_value": 2075,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "2,076",
+                  "numeric_value": 2076,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "2,027",
+                  "numeric_value": 2027,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 2,
+              "metric_label": "Total Reserves",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "67,203",
+                  "numeric_value": 67203,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "65,671",
+                  "numeric_value": 65671,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "79,101",
+                  "numeric_value": 79101,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "85,256",
+                  "numeric_value": 85256,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "78,847",
+                  "numeric_value": 78847,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 3,
+              "metric_label": "Borrowings",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 4,
+              "metric_label": "Other N/C liabilities",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "4,135",
+                  "numeric_value": 4135,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "5,371",
+                  "numeric_value": 5371,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "6,688",
+                  "numeric_value": 6688,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "5,345",
+                  "numeric_value": 5345,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "4,833",
+                  "numeric_value": 4833,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 5,
+              "metric_label": "Current liabilities",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "24,976",
+                  "numeric_value": 24976,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "27,442",
+                  "numeric_value": 27442,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "27,086",
+                  "numeric_value": 27086,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "31,762",
+                  "numeric_value": 31762,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "39,637",
+                  "numeric_value": 39637,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 6,
+              "metric_label": "Total Liabilities",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "98,417",
+                  "numeric_value": 98417,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "1,00,558",
+                  "numeric_value": 100558,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "1,14,950",
+                  "numeric_value": 114950,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "1,24,439",
+                  "numeric_value": 124439,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "1,25,344",
+                  "numeric_value": 125344,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 7,
+              "metric_label": "Assets",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "",
+                  "numeric_value": null,
+                  "status": "missing",
+                  "missing_reason": "blank"
+                }
+              ]
+            },
+            {
+              "row_index": 8,
+              "metric_label": "Net Block",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "14,938",
+                  "numeric_value": 14938,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "15,431",
+                  "numeric_value": 15431,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "14,327",
+                  "numeric_value": 14327,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "13,359",
+                  "numeric_value": 13359,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "13,836",
+                  "numeric_value": 13836,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 9,
+              "metric_label": "Capital WIP",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "411",
+                  "numeric_value": 411,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "275",
+                  "numeric_value": 275,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "277",
+                  "numeric_value": 277,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "778",
+                  "numeric_value": 778,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "512",
+                  "numeric_value": 512,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 10,
+              "metric_label": "Intangible WIP",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "0",
+                  "numeric_value": 0,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 11,
+              "metric_label": "Investments",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "22,869",
+                  "numeric_value": 22869,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "23,686",
+                  "numeric_value": 23686,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "23,352",
+                  "numeric_value": 23352,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "27,371",
+                  "numeric_value": 27371,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "26,036",
+                  "numeric_value": 26036,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 12,
+              "metric_label": "Loans & Advances",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "6,911",
+                  "numeric_value": 6911,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "7,843",
+                  "numeric_value": 7843,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "5,052",
+                  "numeric_value": 5052,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "4,136",
+                  "numeric_value": 4136,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "2,695",
+                  "numeric_value": 2695,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 13,
+              "metric_label": "Other N/C Assets",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "851",
+                  "numeric_value": 851,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "1,241",
+                  "numeric_value": 1241,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "990",
+                  "numeric_value": 990,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "1,627",
+                  "numeric_value": 1627,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "1,834",
+                  "numeric_value": 1834,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 14,
+              "metric_label": "Current Assets",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "52,437",
+                  "numeric_value": 52437,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "52,082",
+                  "numeric_value": 52082,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "70,952",
+                  "numeric_value": 70952,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "77,168",
+                  "numeric_value": 77168,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "80,431",
+                  "numeric_value": 80431,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 15,
+              "metric_label": "Total Assets",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Balance Sheet (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "98,417",
+                  "numeric_value": 98417,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "1,00,558",
+                  "numeric_value": 100558,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "1,14,950",
+                  "numeric_value": 114950,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "1,24,439",
+                  "numeric_value": 124439,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "1,25,344",
+                  "numeric_value": 125344,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    "cash_flow": {
+      "name": "Cash flow",
+      "status": "ok",
+      "tables": [
+        {
+          "name": "Cash Flows (All Figures are in Crores.)",
+          "source_format": "html_table",
+          "source_url": "https://ticker.finology.in/company/INFY?mode=S",
+          "scraped_at": "2026-10-24T10:22:05.907435Z",
+          "reporting_basis": "standalone",
+          "periods": [
+            "Mar 2022",
+            "Mar 2023",
+            "Mar 2024",
+            "Mar 2025",
+            "Mar 2026"
+          ],
+          "context": {
+            "currency": null,
+            "unit": "Crores.",
+            "stated_text": "Cash Flows (All Figures are in Crores.)"
+          },
+          "notes": [],
+          "rows": [
+            {
+              "row_index": 0,
+              "metric_label": "Profit from operations",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "28,495",
+                  "numeric_value": 28495,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "31,643",
+                  "numeric_value": 31643,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "35,953",
+                  "numeric_value": 35953,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "35,441",
+                  "numeric_value": 35441,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "38,757",
+                  "numeric_value": 38757,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 1,
+              "metric_label": "Adjustment",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "588",
+                  "numeric_value": 588,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "564",
+                  "numeric_value": 564,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "-2,303",
+                  "numeric_value": -2303,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "-260",
+                  "numeric_value": -260,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "-675",
+                  "numeric_value": -675,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 2,
+              "metric_label": "Changes in Assets & Liabilities",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "-251",
+                  "numeric_value": -251,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "-5,231",
+                  "numeric_value": -5231,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "-4,628",
+                  "numeric_value": -4628,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "-1,171",
+                  "numeric_value": -1171,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "-2,746",
+                  "numeric_value": -2746,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 3,
+              "metric_label": "Tax Paid",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "-6,736",
+                  "numeric_value": -6736,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "-7,807",
+                  "numeric_value": -7807,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "-8,235",
+                  "numeric_value": -8235,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "-4,601",
+                  "numeric_value": -4601,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "-7,172",
+                  "numeric_value": -7172,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 4,
+              "metric_label": "Operating Cash Flow",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "22,096",
+                  "numeric_value": 22096,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "19,169",
+                  "numeric_value": 19169,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "20,787",
+                  "numeric_value": 20787,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "29,409",
+                  "numeric_value": 29409,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "28,164",
+                  "numeric_value": 28164,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 5,
+              "metric_label": "Investing Cash Flow",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "-3,163",
+                  "numeric_value": -3163,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "952",
+                  "numeric_value": 952,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "-3,305",
+                  "numeric_value": -3305,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "-1,956",
+                  "numeric_value": -1956,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "4,085",
+                  "numeric_value": 4085,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 6,
+              "metric_label": "Financing Cash Flow",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "-24,275",
+                  "numeric_value": -24275,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "-25,857",
+                  "numeric_value": -25857,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "-15,825",
+                  "numeric_value": -15825,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "-21,379",
+                  "numeric_value": -21379,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "-37,787",
+                  "numeric_value": -37787,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            },
+            {
+              "row_index": 7,
+              "metric_label": "Net Cash Flow",
+              "context": {
+                "currency": null,
+                "unit": "Crores.",
+                "stated_text": "Cash Flows (All Figures are in Crores.)"
+              },
+              "values": [
+                {
+                  "column_index": 0,
+                  "period": "Mar 2022",
+                  "raw_text": "-5,342",
+                  "numeric_value": -5342,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 1,
+                  "period": "Mar 2023",
+                  "raw_text": "-5,736",
+                  "numeric_value": -5736,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 2,
+                  "period": "Mar 2024",
+                  "raw_text": "1,657",
+                  "numeric_value": 1657,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 3,
+                  "period": "Mar 2025",
+                  "raw_text": "6,074",
+                  "numeric_value": 6074,
+                  "status": "present",
+                  "missing_reason": null
+                },
+                {
+                  "column_index": 4,
+                  "period": "Mar 2026",
+                  "raw_text": "-5,538",
+                  "numeric_value": -5538,
+                  "status": "present",
+                  "missing_reason": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    }
+  },
+  "warnings": [],
+  "errors": []
+}

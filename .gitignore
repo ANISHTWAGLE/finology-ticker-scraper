@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+.pytest_cache/
+tmp/
+
+# Local instructions, assignment brief and investigation artifacts
+/AGENTS.md
+/Brane-_-Finology-Ticket-BRCAB-002.pdf
+/experiments/
+/scripts/
+/examples/evidence/
+/docs/requirements.md
+/docs/acceptance.md
+/docs/verification.md
+/docs/sample-verification.json
+/docs/performance.md
+/docs/performance-results.json
+/docs/schema/openapi.json
+
+# Local configuration and generated files
+.env
+.env.*
+*.log
+

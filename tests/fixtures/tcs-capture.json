@@ -1,0 +1,13 @@
+{
+  "source_url": "https://ticker.finology.in/company/TCS?mode=S",
+  "scraped_at": "2026-10-24T10:15:41.437850+00:00",
+  "chart_url": "https://ticker.finology.in/GetShares.ashx?v=4.0&fincode=132540",
+  "chart_at": "2026-10-24T10:15:41.722579+00:00",
+  "chart_legends": [
+    "Promoters : 71.77%",
+    "DII : 13.57%",
+    "FII : 9.01%",
+    "Public : 5.65%",
+    "Others : 0%"
+  ]
+}

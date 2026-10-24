@@ -1,0 +1,444 @@
+{
+  "$defs": {
+    "Basis": {
+      "enum": [
+        "standalone",
+        "consolidated"
+      ],
+      "title": "Basis",
+      "type": "string"
+    },
+    "Company": {
+      "additionalProperties": false,
+      "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "type": "string"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "nse_symbol": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nse Symbol"
+        },
+        "bse_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bse Code"
+        }
+      },
+      "required": [
+        "identifier"
+      ],
+      "title": "Company",
+      "type": "object"
+    },
+    "Context": {
+      "additionalProperties": false,
+      "properties": {
+        "currency": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Currency"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "stated_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stated Text"
+        }
+      },
+      "title": "Context",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "Row": {
+      "additionalProperties": false,
+      "properties": {
+        "row_index": {
+          "title": "Row Index",
+          "type": "integer"
+        },
+        "metric_label": {
+          "title": "Metric Label",
+          "type": "string"
+        },
+        "context": {
+          "$ref": "#/$defs/Context"
+        },
+        "values": {
+          "items": {
+            "$ref": "#/$defs/Value"
+          },
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "row_index",
+        "metric_label",
+        "context",
+        "values"
+      ],
+      "title": "Row",
+      "type": "object"
+    },
+    "Section": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "ok",
+            "warning",
+            "partial",
+            "absent",
+            "empty",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "tables": {
+          "items": {
+            "$ref": "#/$defs/Table"
+          },
+          "title": "Tables",
+          "type": "array"
+        },
+        "warnings": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "errors": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Errors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "status"
+      ],
+      "title": "Section",
+      "type": "object"
+    },
+    "Sections": {
+      "additionalProperties": false,
+      "properties": {
+        "shareholding_pattern": {
+          "$ref": "#/$defs/Section"
+        },
+        "quarterly_results": {
+          "$ref": "#/$defs/Section"
+        },
+        "profit_and_loss": {
+          "$ref": "#/$defs/Section"
+        },
+        "balance_sheet": {
+          "$ref": "#/$defs/Section"
+        },
+        "cash_flow": {
+          "$ref": "#/$defs/Section"
+        }
+      },
+      "required": [
+        "shareholding_pattern",
+        "quarterly_results",
+        "profit_and_loss",
+        "balance_sheet",
+        "cash_flow"
+      ],
+      "title": "Sections",
+      "type": "object"
+    },
+    "Table": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "source_format": {
+          "default": "html_table",
+          "enum": [
+            "html_table",
+            "chart"
+          ],
+          "title": "Source Format",
+          "type": "string"
+        },
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        },
+        "scraped_at": {
+          "format": "date-time",
+          "title": "Scraped At",
+          "type": "string"
+        },
+        "reporting_basis": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Basis"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "periods": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Periods",
+          "type": "array"
+        },
+        "context": {
+          "$ref": "#/$defs/Context"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        },
+        "rows": {
+          "items": {
+            "$ref": "#/$defs/Row"
+          },
+          "title": "Rows",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "source_url",
+        "scraped_at",
+        "reporting_basis",
+        "periods",
+        "context",
+        "rows"
+      ],
+      "title": "Table",
+      "type": "object"
+    },
+    "Value": {
+      "additionalProperties": false,
+      "properties": {
+        "column_index": {
+          "title": "Column Index",
+          "type": "integer"
+        },
+        "period": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Period"
+        },
+        "raw_text": {
+          "title": "Raw Text",
+          "type": "string"
+        },
+        "numeric_value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Numeric Value"
+        },
+        "status": {
+          "enum": [
+            "present",
+            "missing",
+            "unparsed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "blank",
+                "source_marker"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Missing Reason"
+        }
+      },
+      "required": [
+        "column_index",
+        "period",
+        "raw_text",
+        "numeric_value",
+        "status"
+      ],
+      "title": "Value",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "complete_with_warnings",
+        "partial",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "company": {
+      "$ref": "#/$defs/Company"
+    },
+    "requested_reporting_basis": {
+      "$ref": "#/$defs/Basis"
+    },
+    "source_url": {
+      "title": "Source Url",
+      "type": "string"
+    },
+    "scraped_at": {
+      "format": "date-time",
+      "title": "Scraped At",
+      "type": "string"
+    },
+    "sections": {
+      "$ref": "#/$defs/Sections"
+    },
+    "warnings": {
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "errors": {
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "title": "Errors",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "company",
+    "requested_reporting_basis",
+    "source_url",
+    "scraped_at",
+    "sections"
+  ],
+  "title": "ScrapeResponse",
+  "type": "object"
+}
