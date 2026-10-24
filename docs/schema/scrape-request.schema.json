@@ -12,14 +12,22 @@
   "additionalProperties": false,
   "properties": {
     "company": {
-      "description": "Finology company URL or company-page slug, such as TCS.",
+      "description": "Enter the Finology page identifier, such as TCS, or paste its full HTTPS company URL. Company-name search is not supported.",
+      "examples": [
+        "TCS"
+      ],
       "maxLength": 2048,
       "minLength": 1,
       "title": "Company",
       "type": "string"
     },
     "reporting_basis": {
-      "$ref": "#/$defs/Basis"
+      "$ref": "#/$defs/Basis",
+      "description": "Choose standalone for the company's own accounts, or consolidated for the company and its subsidiaries. This choice is required.",
+      "examples": [
+        "standalone",
+        "consolidated"
+      ]
     }
   },
   "required": [

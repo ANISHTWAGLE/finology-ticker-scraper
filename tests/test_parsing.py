@@ -144,6 +144,33 @@ def test_empty_table_is_distinct_from_absent(captured_tcs):
     assert s.status == "empty" and s.errors[0].code == "table_empty"
 
 
+def test_empty_supplementary_investor_table_is_not_a_structure_failure(captured_tcs):
+    soup = BeautifulSoup(captured_tcs.html, "html.parser")
+    table = soup.find(id="pills-Promoter").find("table")
+    table.find("thead").find("tr").clear()
+    table.find("tbody").clear()
+    captured_tcs.html = str(soup)
+
+    s = sections(captured_tcs).shareholding_pattern
+
+    assert s.status == "warning"
+    promoter = next(t for t in s.tables if t.name.endswith("Promoter"))
+    assert promoter.periods == [] and promoter.rows == []
+    assert any(w.code == "supplementary_table_empty" for w in s.warnings)
+
+
+def test_empty_header_stays_a_failure_for_required_financial_table(captured_tcs):
+    soup = BeautifulSoup(captured_tcs.html, "html.parser")
+    table = soup.find(id="profit").find("table")
+    table.find("thead").clear()
+    table.find("tbody").clear()
+    captured_tcs.html = str(soup)
+
+    s = sections(captured_tcs).profit_and_loss
+
+    assert s.status == "failed" and s.errors[0].code == "structure_changed"
+
+
 def test_raw_displayed_text_overrides_hidden_unrounded_number():
     r = parse(table("<tr><th>Revenue</th><td><span value='12.34567'>12.35</span></td><td>0</td><td>0</td></tr>"))
     assert r.rows[0].values[0].numeric_value == 12.35

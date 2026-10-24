@@ -48,7 +48,20 @@ From the project folder, run:
 
 Keep this terminal running. Use this command as shown, with one worker and without `--reload`. Chrome starts minimized on the first scrape and is reused. Each request gets a fresh isolated browser context.
 
-Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser. Expand **POST /scrape**, select **Try it out**, enter a request and select **Execute**.
+Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser:
+
+1. Expand **POST /scrape** and choose an example from the **Examples** menu.
+2. Select **Try it out** and replace `TCS` with the company's Finology page identifier or full company URL.
+3. Choose `standalone` for the company's own accounts, or `consolidated` for the company and its subsidiaries.
+4. Select **Execute**.
+
+The simplest request is:
+
+```json
+{"company": "TCS", "reporting_basis": "standalone"}
+```
+
+In the response, `status` tells you whether extraction is complete or partial. If it is partial, check each item under `sections` for its `errors`. Warnings explain qualifications such as an unstated shareholding date. A 422 response means the input needs correction; a 503 response means another scrape is running, so wait and retry.
 
 Press **Ctrl+C** in the server terminal when you want to stop the API and its browser.
 

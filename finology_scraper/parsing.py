@@ -81,15 +81,21 @@ def cells(tr: Tag) -> list[Tag]:
 
 def parse_table(node: Tag, name: str, url: str, at: datetime, basis: Basis | None,
                 *, dates_in_rows: bool = False, context: Context | None = None,
-                notes: list[str] | None = None) -> Table:
+                notes: list[str] | None = None, allow_empty: bool = False) -> Table:
     heads = node.select("thead > tr")
     bodies = node.find_all("tbody", recursive=False)
     if len(heads) != 1 or len(bodies) != 1:
         raise StructureError("Expected one table header row and one table body.")
     headers = [text(c) for c in cells(heads[0])]
+    source_rows = [cells(tr) for tr in bodies[0].find_all("tr", recursive=False)]
+    # The source represents an empty supplementary investor pane as an empty
+    # header row and empty tbody. Keep this narrow exception: financial tables
+    # still fail on this shape so a changed layout is never treated as zero data.
+    if allow_empty and not headers and not source_rows:
+        return Table(name=name, source_url=url, scraped_at=at, reporting_basis=basis,
+                     periods=[], context=context or table_context(name), notes=notes or [], rows=[])
     if len(headers) < 2 or any(not h for h in headers):
         raise StructureError("Table metric or period headings are missing.")
-    source_rows = [cells(tr) for tr in bodies[0].find_all("tr", recursive=False)]
     for i, row in enumerate(source_rows):
         if len(row) != len(headers):
             raise StructureError(f"Row {i + 1} has {len(row)} cells for {len(headers)} headings; "
@@ -130,7 +136,11 @@ def add_numeric_warnings(section: Section):
 
 def parse_financial(soup: BeautifulSoup, key: str, url: str, at: datetime, basis: Basis) -> Section:
     name, container_id, label = FINANCIAL_SECTIONS[key]
-    container = soup.find(id=container_id)
+    containers = soup.find_all(id=container_id)
+    if len(containers) > 1:
+        return Section(name=name, status="failed", errors=[Issue(code="structure_changed",
+                       message=f"Expected at most one financial section container; found {len(containers)}.")])
+    container = containers[0] if containers else None
     headings = [h for h in (container or soup).find_all(["h2", "h3", "h4"])
                 if re.fullmatch(label + r"(?:\s*\(.*\))?", text(h), flags=re.I)]
     if not headings and container is None:
@@ -169,6 +179,9 @@ def parse_shareholding(soup: BeautifulSoup, url: str, at: datetime, chart_text: 
             code="section_absent", message="No shareholding section appears in the retrieved page.")])
     if container is None:
         section.errors.append(Issue(code="structure_changed", message="Shareholding section container is missing."))
+    if investor_root is None:
+        section.errors.append(Issue(code="structure_changed", message=
+            "Investor details container is missing; investor-table extraction could not be verified."))
     expects_chart = bool(container and container.find(id="Share-chart-area"))
     if chart_text is not None:
         try:
@@ -211,8 +224,11 @@ def parse_shareholding(soup: BeautifulSoup, url: str, at: datetime, chart_text: 
             section.errors.append(Issue(code="structure_changed", message="Expected one promoter-pledging table."))
         else:
             try:
-                section.tables.append(parse_table(pledging[0], "Promoter Pledging %", url, at, None,
-                    dates_in_rows=True, context=Context(unit="%", stated_text="% of equity capital")))
+                parsed = parse_table(pledging[0], "Promoter Pledging %", url, at, None,
+                    dates_in_rows=True, context=Context(unit="%", stated_text="% of equity capital"))
+                section.tables.append(parsed)
+                if not table_has_data(parsed):
+                    section.errors.append(Issue(code="table_empty", message="Promoter Pledging % has no data."))
             except StructureError as exc:
                 section.errors.append(Issue(code="structure_changed", message=str(exc)))
     if investor_root:
@@ -225,7 +241,8 @@ def parse_shareholding(soup: BeautifulSoup, url: str, at: datetime, chart_text: 
                 continue
             try:
                 parsed = parse_table(tables[0], table_name, url, at, None,
-                                     context=Context(unit="%", stated_text="% in period column headings"))
+                                     context=Context(unit="%", stated_text="% in period column headings"),
+                                     allow_empty=True)
                 section.tables.append(parsed)
                 if not table_has_data(parsed):
                     section.warnings.append(Issue(code="supplementary_table_empty", message=f"{table_name} has no data."))

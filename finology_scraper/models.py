@@ -18,8 +18,11 @@ class Basis(str, Enum):
 
 class ScrapeRequest(Model):
     company: str = Field(min_length=1, max_length=2048,
-                         description="Finology company URL or company-page slug, such as TCS.")
-    reporting_basis: Basis
+                         description="Enter the Finology page identifier, such as TCS, or paste its full HTTPS company URL. Company-name search is not supported.",
+                         examples=["TCS"])
+    reporting_basis: Basis = Field(description=
+        "Choose standalone for the company's own accounts, or consolidated for the company and its subsidiaries. This choice is required.",
+        examples=["standalone", "consolidated"])
 
 
 class Issue(Model):

@@ -61,4 +61,6 @@ Codes include `invalid_company_input`, `company_not_found`, `page_unavailable`, 
 
 Malformed request fields/JSON receive HTTP 422 and FastAPI's standard `detail` list. A valid body with an invalid company target receives the full scrape envelope with failed section statuses. Invalid bodies may not contain a usable company or reporting basis, so these shapes are distinct.
 
+If a decoded invalid input contains infinity or NaN (including an overflowed exponent), its value in the validation error details is represented as a string so the response remains valid JSON. Missing investor containers, duplicate financial containers and empty pledging tables produce explicit section errors and cannot count toward a complete result.
+
 On failures before a document is retrieved, source_url may be empty and scraped_at records the failed attempt time. No table retrieval timestamp is fabricated.

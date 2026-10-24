@@ -15,6 +15,7 @@ tmp/
 /docs/sample-verification.json
 /docs/performance.md
 /docs/performance-results.json
+/docs/tester-report.md
 /docs/schema/openapi.json
 
 # Local configuration and generated files

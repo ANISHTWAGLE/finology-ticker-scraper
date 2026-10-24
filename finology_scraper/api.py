@@ -5,11 +5,15 @@ from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
 from functools import partial
 import logging
+import math
 import os
 from pathlib import Path
+from typing import Annotated
 from uuid import uuid4
 
-from fastapi import FastAPI, Request
+from fastapi import Body, FastAPI, Request
+from fastapi.encoders import jsonable_encoder
+from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
 from .models import Issue, ScrapeRequest, ScrapeResponse
@@ -36,15 +40,34 @@ async def lifespan(app):
 
 
 app = FastAPI(title="Finology Financial Data Scraper", version="1.0.0", lifespan=lifespan,
-              description="Extract the five PDF-required sections. Each request explicitly selects a reporting basis.")
+              description="Get shareholding, quarterly results, profit and loss, balance sheet and cash flow. "
+              "Open POST /scrape below, select an example, click Try it out, edit the company and click Execute. "
+              "Only company and reporting_basis are required.")
 
 
-@app.get("/health")
+@app.exception_handler(RequestValidationError)
+async def validation_error(request: Request, exc: RequestValidationError):
+    # The JSON decoder accepts NaN/Infinity and can overflow large exponents.
+    # Keep invalid inputs visible without putting non-finite numbers in JSON.
+    detail = jsonable_encoder(exc.errors(), custom_encoder={
+        float: lambda number: number if math.isfinite(number) else str(number),
+    })
+    return JSONResponse(status_code=422, content={"detail": detail})
+
+
+@app.get("/health", summary="Check whether the API is running",
+         description="Checks the API process only. It does not check Finology availability.")
 async def health():
     return {"status": "ok"}
 
 
-@app.post("/scrape", response_model=ScrapeResponse, responses={
+@app.post("/scrape", response_model=ScrapeResponse, summary="Get a company's financial data",
+          description="Enter a company-page identifier such as TCS, or paste its Finology URL. "
+          "Choose standalone (company only) or consolidated (company and subsidiaries). "
+          "All available public rows and periods are returned. "
+          "HTTP 200 means complete, possibly with warnings; HTTP 207 means partial: "
+          "check sections for missing data and explanations. For HTTP 422, correct the request. "
+          "For HTTP 503, wait for the active scrape to finish before retrying.", responses={
     207: {"model": ScrapeResponse, "description": "Partial extraction; inspect section statuses."},
     404: {"model": ScrapeResponse}, 502: {"model": ScrapeResponse}, 504: {"model": ScrapeResponse},
     503: {"model": ScrapeResponse, "description": "Another scrape is already running."},
@@ -55,7 +78,15 @@ async def health():
                 "detail": {"type": "array", "items": {"type": "object"}}}},
         ]}}}},
 })
-async def scrape(body: ScrapeRequest, request: Request):
+async def scrape(body: Annotated[ScrapeRequest, Body(openapi_examples={
+    "standalone": {"summary": "Company only (standalone)",
+                   "value": {"company": "TCS", "reporting_basis": "standalone"}},
+    "consolidated": {"summary": "Company and subsidiaries (consolidated)",
+                     "value": {"company": "TCS", "reporting_basis": "consolidated"}},
+    "company_url": {"summary": "Paste a Finology company URL",
+                    "value": {"company": "https://ticker.finology.in/company/TCS",
+                              "reporting_basis": "standalone"}},
+})], request: Request):
     lock = request.app.state.scrape_lock
     if lock.locked():
         result = failed_response(body, body.company, "", Issue(code="service_busy",
