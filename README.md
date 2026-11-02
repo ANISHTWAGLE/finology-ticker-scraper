@@ -158,3 +158,11 @@ Read the short [limitations and assumptions note](docs/limitations.md), includin
 | 504 | Source/browser operation timed out |
 
 Malformed request bodies use FastAPI's `detail` error response. Valid requests that fail scraping include all five section keys with explicit statuses and explanations.
+
+## Screener support
+
+`POST /screener/scrape` is available on the same API. See [Screener usage and verification](docs/screener.md) for inputs, supported tables and limitations.
+
+For PostgreSQL storage, run `./setup-postgres.ps1` with Docker Desktop running.
+Complete Screener scrapes replace the latest data for each company/reporting basis;
+partial scrapes leave saved data unchanged. See [database setup and SQL queries](docs/postgres.md).

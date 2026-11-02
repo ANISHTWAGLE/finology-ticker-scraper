@@ -19,6 +19,7 @@ from fastapi.responses import JSONResponse
 from .models import Issue, ScrapeRequest, ScrapeResponse
 from .service import failed_response, response_http_status, scrape_company
 from .retrieval import BrowserRetriever
+from screener_scraper.api import router as screener_router
 
 
 log = logging.getLogger(__name__)
@@ -43,6 +44,7 @@ app = FastAPI(title="Finology Financial Data Scraper", version="1.0.0", lifespan
               description="Get shareholding, quarterly results, profit and loss, balance sheet and cash flow. "
               "Open POST /scrape below, select an example, click Try it out, edit the company and click Execute. "
               "Only company and reporting_basis are required.")
+app.include_router(screener_router)
 
 
 @app.exception_handler(RequestValidationError)

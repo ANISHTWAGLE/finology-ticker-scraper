@@ -22,4 +22,5 @@ tmp/
 .env
 .env.*
 *.log
+.secrets/
 
