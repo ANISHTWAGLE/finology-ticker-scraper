@@ -166,3 +166,8 @@ Malformed request bodies use FastAPI's `detail` error response. Valid requests t
 For PostgreSQL storage, run `./setup-postgres.ps1` with Docker Desktop running.
 Complete Screener scrapes replace the latest data for each company/reporting basis;
 partial scrapes leave saved data unchanged. See [database setup and SQL queries](docs/postgres.md).
+
+For Nifty 50 seeding, `POST /screener/jobs/nifty50` starts a durable background job
+for all 50 companies and both reporting bases. `GET /screener/jobs/{job_id}` reports
+progress; an explicit retry endpoint handles unfinished work. See
+[batch setup, Lightpanda comparison and API examples](docs/nifty50-batches.md).

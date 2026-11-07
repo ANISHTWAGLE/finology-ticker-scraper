@@ -1,0 +1,4655 @@
+{
+  "measured_date": "2026-11-06",
+  "source": "https://www.screener.in",
+  "sample": {
+    "companies": [
+      "TCS",
+      "ITC"
+    ],
+    "bases": [
+      "standalone",
+      "consolidated"
+    ],
+    "workers": 1,
+    "request_start_interval_seconds": 2,
+    "shared_investor_cache": "per company and engine across sequential bases",
+    "database_writes": false,
+    "timing_basis": "Four extraction items plus transport initialization after common Python/application imports; excludes process startup."
+  },
+  "versions": {
+    "python": "3.12.10",
+    "curl_cffi": "0.17.0",
+    "scrapling": "0.5.1",
+    "Scrapy": "2.19.0",
+    "beautifulsoup4": "4.15.0"
+  },
+  "engines": [
+    {
+      "engine": "urllib",
+      "requests": 86,
+      "http_statuses": {
+        "200": 82,
+        "403": 4
+      },
+      "elapsed_seconds": 170.527,
+      "peak_process_tree_rss_mib": null
+    },
+    {
+      "engine": "curl_cffi",
+      "requests": 86,
+      "http_statuses": {
+        "200": 82,
+        "403": 4
+      },
+      "elapsed_seconds": 171.933,
+      "peak_process_tree_rss_mib": null
+    },
+    {
+      "engine": "scrapling",
+      "requests": 86,
+      "http_statuses": {
+        "200": 82,
+        "403": 4
+      },
+      "elapsed_seconds": 170.886,
+      "peak_process_tree_rss_mib": 143.88
+    },
+    {
+      "engine": "scrapy",
+      "requests": 2,
+      "http_statuses": {},
+      "elapsed_seconds": null,
+      "peak_process_tree_rss_mib": null,
+      "adapter_statuses": {
+        "504": 2
+      }
+    }
+  ],
+  "items": [
+    {
+      "engine": "urllib",
+      "symbol": "TCS",
+      "basis": "standalone",
+      "status": "partial",
+      "normalized_digest": "d7a264be5b4c5a55655c93f928474cf58efef2e27c3f6537f8f96b42fe6233c6",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 52.105,
+      "cells": 9369,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 22
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 29
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 36
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 32
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 679
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "urllib",
+      "symbol": "TCS",
+      "basis": "consolidated",
+      "status": "partial",
+      "normalized_digest": "3387fdee411a58f95ca99b060801cfead765a3cd89ba01c21059074395b0cbb2",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 33.997,
+      "cells": 9384,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 23
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 30
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 37
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 30
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 679
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "urllib",
+      "symbol": "ITC",
+      "basis": "standalone",
+      "status": "partial",
+      "normalized_digest": "2b58bd32c4ff81b28e4785c5d4128f31a7761942bbfcb65647115f7d3db22d10",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 49.827,
+      "cells": 2194,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 23
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 30
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 36
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 29
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 57
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "urllib",
+      "symbol": "ITC",
+      "basis": "consolidated",
+      "status": "partial",
+      "normalized_digest": "556f9b81c8e3b5b2f00047dc348ded55c4ce43ec01b28ed026a346aa1b5635c0",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 33.998,
+      "cells": 2246,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 24
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 32
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 37
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 29
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 57
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "curl_cffi",
+      "symbol": "TCS",
+      "basis": "standalone",
+      "status": "partial",
+      "normalized_digest": "d7a264be5b4c5a55655c93f928474cf58efef2e27c3f6537f8f96b42fe6233c6",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 53.196,
+      "cells": 9369,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 22
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 29
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 36
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 32
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 679
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "curl_cffi",
+      "symbol": "TCS",
+      "basis": "consolidated",
+      "status": "partial",
+      "normalized_digest": "3387fdee411a58f95ca99b060801cfead765a3cd89ba01c21059074395b0cbb2",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 33.667,
+      "cells": 9384,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 23
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 30
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 37
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 30
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 679
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "curl_cffi",
+      "symbol": "ITC",
+      "basis": "standalone",
+      "status": "partial",
+      "normalized_digest": "2b58bd32c4ff81b28e4785c5d4128f31a7761942bbfcb65647115f7d3db22d10",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 49.363,
+      "cells": 2194,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 23
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 30
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 36
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 29
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 57
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "curl_cffi",
+      "symbol": "ITC",
+      "basis": "consolidated",
+      "status": "partial",
+      "normalized_digest": "556f9b81c8e3b5b2f00047dc348ded55c4ce43ec01b28ed026a346aa1b5635c0",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 33.475,
+      "cells": 2246,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 24
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 32
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 37
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 29
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 57
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "scrapling",
+      "symbol": "TCS",
+      "basis": "standalone",
+      "status": "partial",
+      "normalized_digest": "d7a264be5b4c5a55655c93f928474cf58efef2e27c3f6537f8f96b42fe6233c6",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 52.131,
+      "cells": 9369,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 22
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 29
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 36
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 32
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 679
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "scrapling",
+      "symbol": "TCS",
+      "basis": "consolidated",
+      "status": "partial",
+      "normalized_digest": "3387fdee411a58f95ca99b060801cfead765a3cd89ba01c21059074395b0cbb2",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 34.112,
+      "cells": 9384,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 23
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 30
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 37
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 30
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 679
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "scrapling",
+      "symbol": "ITC",
+      "basis": "standalone",
+      "status": "partial",
+      "normalized_digest": "2b58bd32c4ff81b28e4785c5d4128f31a7761942bbfcb65647115f7d3db22d10",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 49.844,
+      "cells": 2194,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 23
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 30
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 36
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 29
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 57
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "scrapling",
+      "symbol": "ITC",
+      "basis": "consolidated",
+      "status": "partial",
+      "normalized_digest": "556f9b81c8e3b5b2f00047dc348ded55c4ce43ec01b28ed026a346aa1b5635c0",
+      "matches_urllib_reference": true,
+      "elapsed_seconds": 33.877,
+      "cells": 2246,
+      "section_rows": {
+        "quarterly_results": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 24
+        },
+        "profit_and_loss": {
+          "status": "partial",
+          "tables": 5,
+          "rows": 32
+        },
+        "balance_sheet": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 37
+        },
+        "cash_flow": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 29
+        },
+        "ratios": {
+          "status": "ok",
+          "tables": 1,
+          "rows": 6
+        },
+        "shareholding_pattern": {
+          "status": "ok",
+          "tables": 2,
+          "rows": 57
+        }
+      },
+      "issue_messages": {
+        "profit_and_loss": [
+          "Other Expenses %: Screener returned HTTP 403."
+        ]
+      }
+    },
+    {
+      "engine": "scrapy",
+      "symbol": "TCS",
+      "basis": "standalone",
+      "status": "error",
+      "error_status": 504,
+      "error": "scrapy retrieval failure: Persistent Scrapy worker timed out.",
+      "elapsed_seconds": 90.044
+    },
+    {
+      "engine": "scrapy",
+      "symbol": "TCS",
+      "basis": "consolidated",
+      "status": "error",
+      "error_status": 504,
+      "error": "scrapy retrieval failure: Persistent Scrapy worker timed out.",
+      "elapsed_seconds": 90.047
+    }
+  ],
+  "requests_by_engine_and_item": {
+    "urllib": [
+      {
+        "symbol": "TCS",
+        "basis": "standalone",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/TCS/",
+            "status": 200,
+            "elapsed_seconds": 0.1305,
+            "response_bytes": 283744,
+            "sha256": "2ad2d67870832646ef803d60ab531f7588854adbfe1db677a68feb8482efe332"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0531,
+            "response_bytes": 1449,
+            "sha256": "e81a91bbde3400148695aca131f96a9db849c0ee982d0257bad6d22610259375"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0536,
+            "response_bytes": 556,
+            "sha256": "df92a0dcba06d5eb84056d6e0fde2e27ecaf941a3813438d704ebc8a07131257"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0546,
+            "response_bytes": 1448,
+            "sha256": "7c8fce1537d2fb4621a1f289bb4b3136283638df5118ad5b27dcbd7af7fe036d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0805,
+            "response_bytes": 2136,
+            "sha256": "c9a030f715097a413232b2bcd9158a6ca2075c43a7f7fe8d002a3c9a9d403299"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0555,
+            "response_bytes": 563,
+            "sha256": "884e5899c580198f6ac1806a8151fa1ed4ffc5aea3b91460c1a2a21ed37a138c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0546,
+            "response_bytes": 1428,
+            "sha256": "5bd2851a1e2c0530f4f7497b63c2e2409c5bc468bc7193d80ace262e25b4917d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0533,
+            "response_bytes": 1324,
+            "sha256": "de77b0050866b2f3cdcd1108db281598ea10c708e52fd69408e16bdaa762466f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+            "status": 403,
+            "elapsed_seconds": 0.0449,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0626,
+            "response_bytes": 1031,
+            "sha256": "c73aa57a7732f5360230f3823196815034c1794d33ce915e297c79a2cb6bf6ba"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0598,
+            "response_bytes": 882,
+            "sha256": "48a9b4bf3770cae2ec865d8506e1a5b2ddf909b232aacf4693ba6ffda3c12524"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0746,
+            "response_bytes": 3072,
+            "sha256": "6d071dfc604c19b5e8c74568b4e46a8dd6122c076df101cab61405865ee72dbc"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0622,
+            "response_bytes": 1544,
+            "sha256": "5dec9824491a2d77bedb8a28341782fe6596f1efe5a884810ecfc6058fb84fc2"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0482,
+            "response_bytes": 806,
+            "sha256": "2dd9751745a0534da6fb23119d9ed90c1bae261ba8adac767ab7b336028b6b72"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0709,
+            "response_bytes": 2215,
+            "sha256": "720c0c1ed2a498e0cbe9f5798f41f5aa228db42de4708bba0efe103c45ad7a5b"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0564,
+            "response_bytes": 2958,
+            "sha256": "6c996fde3815624721c18b6327160ad02e9a31c87469ffee00024827a7bb731c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.056,
+            "response_bytes": 1795,
+            "sha256": "88ce43e4a3cb532f5d24da9eeaa06c48c8f7e0b2586b4561362c8a62c7630cb7"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/promoters/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.118,
+            "response_bytes": 82946,
+            "sha256": "fa9a553463cfd0668ddfd7b2a087d35e31daf708f0c022c326c14052ed130d49"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0553,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0576,
+            "response_bytes": 991,
+            "sha256": "9c9ebda7def39db8b3474e6000a0bf6b91195da39a325164716f7a70466efdea"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/government/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.049,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/public/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.059,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/promoters/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0683,
+            "response_bytes": 56424,
+            "sha256": "1cc2708d45c0cb1d776da82ce24777bbe683215d166084a2264bff2fc5275a68"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.049,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0497,
+            "response_bytes": 751,
+            "sha256": "7bcac322d8ce35bd5134b47206d90c1cb8dba68e12a9634fe94e8eb86a4b5b1d"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/government/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0553,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/public/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0565,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          }
+        ]
+      },
+      {
+        "symbol": "TCS",
+        "basis": "consolidated",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/TCS/consolidated/",
+            "status": 200,
+            "elapsed_seconds": 0.1124,
+            "response_bytes": 283136,
+            "sha256": "63df7b31c6066dd3abf97c61af8a1f03ebd08797b50cbfa6c0168e553c74cf40"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0546,
+            "response_bytes": 1365,
+            "sha256": "3d9b5367e8e04bdffab0014f31e521404d6bc0a4a06501382d46d32dfb03d0dc"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0449,
+            "response_bytes": 548,
+            "sha256": "135734ae28bc4767cf7f6db9cbaddeb4463dbfdb8966674603a8cd28a79f986f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0469,
+            "response_bytes": 1709,
+            "sha256": "ac84156d0e02a870ab14f81e76924391cbfcbbbb924302ce45ff83a292bf245a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0755,
+            "response_bytes": 2140,
+            "sha256": "21b8a26f2f9d3c6568c81d727ca3932b5b2b6697306db5031025f0c24d165b6b"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0675,
+            "response_bytes": 562,
+            "sha256": "a1b5ccc47be84fea56d7c4c2756ae3b8b52438392abdc7abcf162bbb4421c8b6"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0426,
+            "response_bytes": 1700,
+            "sha256": "9177c6d2b3e5de5794377235d99e50b5605e4bd13628e46fcc4d4f8e153ac92c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.069,
+            "response_bytes": 1328,
+            "sha256": "e134988ce0e54625186a2f33697330f13130c2ee91b9fc61291a4187b140ff43"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+            "status": 403,
+            "elapsed_seconds": 0.0389,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0531,
+            "response_bytes": 1036,
+            "sha256": "21b1c8d50679330ee54511193412ec81573c487c40380094ad6238c50c440ed0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0427,
+            "response_bytes": 1165,
+            "sha256": "206890c25b7b0206d03c1aa0f7562f1eb0b417f524873e6a2da7d1e6a77ed0ab"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0668,
+            "response_bytes": 3141,
+            "sha256": "40eeab1322496ed513fdd61aabaad09a68143fe65979fac33f182a604938c5aa"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.042,
+            "response_bytes": 1553,
+            "sha256": "171b25bf894a3b3bae5919b4ff35b04b40bba6dce082cfd4bede99e36171b33c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0523,
+            "response_bytes": 806,
+            "sha256": "65b27d6244d28d64314681a426082fff25c38558ed99b193bd58692683f2fde8"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0461,
+            "response_bytes": 2216,
+            "sha256": "9b27937b3d9bec5a913ad472f06cb2134ef6a0ec5cccc54fd88ab850d81552f0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0438,
+            "response_bytes": 2451,
+            "sha256": "483b60b448e4878a93d8ecfdf1c735357e0bb7034fe7fe155d50054fd9d7758d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0363,
+            "response_bytes": 1813,
+            "sha256": "73c26ecb3e0e837062e22a95c84ee4dcf666a8e63de29d0c72ab32628d92e52f"
+          }
+        ]
+      },
+      {
+        "symbol": "ITC",
+        "basis": "standalone",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/ITC/",
+            "status": 200,
+            "elapsed_seconds": 0.112,
+            "response_bytes": 249703,
+            "sha256": "d31ff5332f180affdf25ab6c651824efbd9af30193f1cccfd98a0c95b373ece0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0403,
+            "response_bytes": 2096,
+            "sha256": "3de89d1df4684c9650efb1619cc8ef28289185d4bd451bb6d769e6f0d0850c8e"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0476,
+            "response_bytes": 542,
+            "sha256": "1d264b0b98c31a17648dc1a9e9023c22bd7f06297c8d72e058cc7d175357663a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0458,
+            "response_bytes": 1416,
+            "sha256": "53530c9b9b85a87bdc044351fd38dcfa64503c7dd4d287c34f607ce0d4c18561"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0468,
+            "response_bytes": 2276,
+            "sha256": "64a6b08fe861a8654198676e479c8b879ce810bcde99af30faec125a04b2459e"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0482,
+            "response_bytes": 562,
+            "sha256": "d2161c4fea2171de5ca48c689060f2eb688034195ad623065ada650ec1032ecd"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0472,
+            "response_bytes": 1427,
+            "sha256": "3ca3bcfa19ec9ecdb1beee7e3169127e2d18315a6f4c6465a456d045cc637bd7"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0393,
+            "response_bytes": 2104,
+            "sha256": "b6e82ea60bf41c181f79c0623470a4df387d043e0411231cfa27cdb5de6ffe8d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+            "status": 403,
+            "elapsed_seconds": 0.0411,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0514,
+            "response_bytes": 1007,
+            "sha256": "f790c408818b2463cd52f04bff1aa8d433017d2ab4ff688d1fb1736ec10ddf8a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0475,
+            "response_bytes": 877,
+            "sha256": "699f6361ffe440d28a09a2a2b8d0ab4bf2ecf877c4d8aaf6ef0e53c17549355f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0479,
+            "response_bytes": 3064,
+            "sha256": "49ef523183cd607fbe6d760d100b40e765123f8bda87c8692cd919858412520d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0447,
+            "response_bytes": 1523,
+            "sha256": "cc2fca8019ec6119b0d97234b303f0710203a7012ee2fdf661af1ee29b3cf975"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0767,
+            "response_bytes": 771,
+            "sha256": "a71143a09678e05f44fd704447bdcaaa1d04f97a7bafcf4768e435d9b2a3c445"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0379,
+            "response_bytes": 1685,
+            "sha256": "d0609984799840853a353d6f473d58fcbb059b6e8dd84a2e30d493c768f15fd3"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0463,
+            "response_bytes": 2669,
+            "sha256": "25576663c2c9d9aef92b4da8c99225fb9512040a40b2c46352a44945ddd85abb"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0476,
+            "response_bytes": 1794,
+            "sha256": "4da5e8891a53044fde4dcb7e1fa9c8e9c0243f9437ff20f01d544dbe2f0c9df8"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0525,
+            "response_bytes": 2152,
+            "sha256": "c09efa3225d3518a94363ceb868a34ca7799ae724e87ab8d5183e9bb09ae8611"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0489,
+            "response_bytes": 3810,
+            "sha256": "e999456f70b353709cabae6f496589702aba62f7b8610ffb95db7e142e9e9ede"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/government/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0445,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/public/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0428,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0555,
+            "response_bytes": 1465,
+            "sha256": "0a0ad03bb676cba27178afd2ccdc3872bcc5dfe01cc013d6dfc6afa1e0e1fc3a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0376,
+            "response_bytes": 3426,
+            "sha256": "19cda75b1b0ae756f290a828b0916c48816489062047d6e21a566169ba166811"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/government/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0471,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/public/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0438,
+            "response_bytes": 979,
+            "sha256": "91d0bb4655a7de3da88ab1d4a86d9e1b350e22d9e4230dde90ea73fffb31ad29"
+          }
+        ]
+      },
+      {
+        "symbol": "ITC",
+        "basis": "consolidated",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/ITC/consolidated/",
+            "status": 200,
+            "elapsed_seconds": 0.0909,
+            "response_bytes": 249905,
+            "sha256": "fa1f5c369c50743008eb08403558d6b0a1b49413d834829154a2e7e3bcc2fa0a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0764,
+            "response_bytes": 2122,
+            "sha256": "e7ec24a067c6536153a7fa2a2b32cf7b25b9210971c648f4029853902124bce6"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0471,
+            "response_bytes": 539,
+            "sha256": "d6f0e0d4be457c10a4feec5cc36ce01879ce445339ecd1e79d2deb873d749a09"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0682,
+            "response_bytes": 1687,
+            "sha256": "09ae720941e5a8944f019c8ee6228db14a7ba01fcb415a876028ddfe7140a185"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0441,
+            "response_bytes": 2278,
+            "sha256": "69c93821b5456d976b82746bc6677aac8feb0b4758bc799502e14618ffc5e8a7"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.046,
+            "response_bytes": 557,
+            "sha256": "d007001450981275a6182248e8007ac412eca4eccb465a040ab83b4d4357261c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0516,
+            "response_bytes": 1942,
+            "sha256": "57f8d5b827cc8532fc81bd6484ba29709868da65fba60ba369a54891061806c2"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0409,
+            "response_bytes": 2105,
+            "sha256": "d2e00f9f83677ba229ce1979994dd02f1fb52d00e85e1ce5b87775ffa8439fd8"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+            "status": 403,
+            "elapsed_seconds": 0.0469,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0442,
+            "response_bytes": 1019,
+            "sha256": "a52c75cfb76b941642a4aae834ad0cd147232e48d53627a9ef665440eea13a58"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0691,
+            "response_bytes": 1149,
+            "sha256": "53dd49207072a0a9dea87ee2c0042c4abd70c1636c3e1220acb25e1fa252c134"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0586,
+            "response_bytes": 3073,
+            "sha256": "741d0723fef4dd81e7268ef150eecf21f826926968b26349b29154eb8e77fc65"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0459,
+            "response_bytes": 1526,
+            "sha256": "b88deddcb5e33cfc60411c29ecae576caa87d4843cfb5b209956c4bba62cc05d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0517,
+            "response_bytes": 776,
+            "sha256": "9554e75b7064a9c94e960b528f5e57787e0ef7add4c26d4af6b697664f0a2dbd"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0422,
+            "response_bytes": 1693,
+            "sha256": "8a526a1ca23e30f073c60ee5ceaa51ffa034faa53dd2b57dfbc473dfb0fbb78d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0577,
+            "response_bytes": 2622,
+            "sha256": "d38344fd92f678a64bb46eeb80c0f0b1f3cad34a9cb1d931e62e679e4cf71e87"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0747,
+            "response_bytes": 1803,
+            "sha256": "dd88a2e6543f3ec529b927d3569e327ac6bb104dab9dcd645dc43f500cc607d4"
+          }
+        ]
+      }
+    ],
+    "curl_cffi": [
+      {
+        "symbol": "TCS",
+        "basis": "standalone",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/TCS/",
+            "status": 200,
+            "elapsed_seconds": 0.2624,
+            "response_bytes": 283744,
+            "sha256": "4399770fc4ac10008918ae617e5d2df97b108caea1e5f3af7b35891958bbc55a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0109,
+            "response_bytes": 1449,
+            "sha256": "e81a91bbde3400148695aca131f96a9db849c0ee982d0257bad6d22610259375"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0098,
+            "response_bytes": 556,
+            "sha256": "df92a0dcba06d5eb84056d6e0fde2e27ecaf941a3813438d704ebc8a07131257"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0143,
+            "response_bytes": 1448,
+            "sha256": "7c8fce1537d2fb4621a1f289bb4b3136283638df5118ad5b27dcbd7af7fe036d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0108,
+            "response_bytes": 2136,
+            "sha256": "c9a030f715097a413232b2bcd9158a6ca2075c43a7f7fe8d002a3c9a9d403299"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0101,
+            "response_bytes": 563,
+            "sha256": "884e5899c580198f6ac1806a8151fa1ed4ffc5aea3b91460c1a2a21ed37a138c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0101,
+            "response_bytes": 1428,
+            "sha256": "5bd2851a1e2c0530f4f7497b63c2e2409c5bc468bc7193d80ace262e25b4917d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0089,
+            "response_bytes": 1324,
+            "sha256": "de77b0050866b2f3cdcd1108db281598ea10c708e52fd69408e16bdaa762466f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+            "status": 403,
+            "elapsed_seconds": 0.0102,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0094,
+            "response_bytes": 1031,
+            "sha256": "c73aa57a7732f5360230f3823196815034c1794d33ce915e297c79a2cb6bf6ba"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0096,
+            "response_bytes": 882,
+            "sha256": "48a9b4bf3770cae2ec865d8506e1a5b2ddf909b232aacf4693ba6ffda3c12524"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0099,
+            "response_bytes": 3072,
+            "sha256": "6d071dfc604c19b5e8c74568b4e46a8dd6122c076df101cab61405865ee72dbc"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0095,
+            "response_bytes": 1544,
+            "sha256": "5dec9824491a2d77bedb8a28341782fe6596f1efe5a884810ecfc6058fb84fc2"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0096,
+            "response_bytes": 806,
+            "sha256": "2dd9751745a0534da6fb23119d9ed90c1bae261ba8adac767ab7b336028b6b72"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0114,
+            "response_bytes": 2215,
+            "sha256": "720c0c1ed2a498e0cbe9f5798f41f5aa228db42de4708bba0efe103c45ad7a5b"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0095,
+            "response_bytes": 2958,
+            "sha256": "6c996fde3815624721c18b6327160ad02e9a31c87469ffee00024827a7bb731c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0117,
+            "response_bytes": 1795,
+            "sha256": "88ce43e4a3cb532f5d24da9eeaa06c48c8f7e0b2586b4561362c8a62c7630cb7"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/promoters/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0133,
+            "response_bytes": 82946,
+            "sha256": "fa9a553463cfd0668ddfd7b2a087d35e31daf708f0c022c326c14052ed130d49"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0102,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0194,
+            "response_bytes": 991,
+            "sha256": "9c9ebda7def39db8b3474e6000a0bf6b91195da39a325164716f7a70466efdea"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/government/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0116,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/public/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0084,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/promoters/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0428,
+            "response_bytes": 56424,
+            "sha256": "1cc2708d45c0cb1d776da82ce24777bbe683215d166084a2264bff2fc5275a68"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.008,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0099,
+            "response_bytes": 751,
+            "sha256": "7bcac322d8ce35bd5134b47206d90c1cb8dba68e12a9634fe94e8eb86a4b5b1d"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/government/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.009,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/public/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0097,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          }
+        ]
+      },
+      {
+        "symbol": "TCS",
+        "basis": "consolidated",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/TCS/consolidated/",
+            "status": 200,
+            "elapsed_seconds": 0.0416,
+            "response_bytes": 283136,
+            "sha256": "cd373c81b7b7cd54d66814328eccd378f1f77030a0751d95066a19fb41bac69b"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.008,
+            "response_bytes": 1365,
+            "sha256": "3d9b5367e8e04bdffab0014f31e521404d6bc0a4a06501382d46d32dfb03d0dc"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0132,
+            "response_bytes": 548,
+            "sha256": "135734ae28bc4767cf7f6db9cbaddeb4463dbfdb8966674603a8cd28a79f986f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0087,
+            "response_bytes": 1709,
+            "sha256": "ac84156d0e02a870ab14f81e76924391cbfcbbbb924302ce45ff83a292bf245a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0114,
+            "response_bytes": 2140,
+            "sha256": "21b8a26f2f9d3c6568c81d727ca3932b5b2b6697306db5031025f0c24d165b6b"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0093,
+            "response_bytes": 562,
+            "sha256": "a1b5ccc47be84fea56d7c4c2756ae3b8b52438392abdc7abcf162bbb4421c8b6"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0086,
+            "response_bytes": 1700,
+            "sha256": "9177c6d2b3e5de5794377235d99e50b5605e4bd13628e46fcc4d4f8e153ac92c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.009,
+            "response_bytes": 1328,
+            "sha256": "e134988ce0e54625186a2f33697330f13130c2ee91b9fc61291a4187b140ff43"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+            "status": 403,
+            "elapsed_seconds": 0.0102,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0096,
+            "response_bytes": 1036,
+            "sha256": "21b1c8d50679330ee54511193412ec81573c487c40380094ad6238c50c440ed0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.011,
+            "response_bytes": 1165,
+            "sha256": "206890c25b7b0206d03c1aa0f7562f1eb0b417f524873e6a2da7d1e6a77ed0ab"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0122,
+            "response_bytes": 3141,
+            "sha256": "40eeab1322496ed513fdd61aabaad09a68143fe65979fac33f182a604938c5aa"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.014,
+            "response_bytes": 1553,
+            "sha256": "171b25bf894a3b3bae5919b4ff35b04b40bba6dce082cfd4bede99e36171b33c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0116,
+            "response_bytes": 806,
+            "sha256": "65b27d6244d28d64314681a426082fff25c38558ed99b193bd58692683f2fde8"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0097,
+            "response_bytes": 2216,
+            "sha256": "9b27937b3d9bec5a913ad472f06cb2134ef6a0ec5cccc54fd88ab850d81552f0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0104,
+            "response_bytes": 2451,
+            "sha256": "483b60b448e4878a93d8ecfdf1c735357e0bb7034fe7fe155d50054fd9d7758d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0126,
+            "response_bytes": 1813,
+            "sha256": "73c26ecb3e0e837062e22a95c84ee4dcf666a8e63de29d0c72ab32628d92e52f"
+          }
+        ]
+      },
+      {
+        "symbol": "ITC",
+        "basis": "standalone",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/ITC/",
+            "status": 200,
+            "elapsed_seconds": 0.0434,
+            "response_bytes": 249703,
+            "sha256": "cbb32e79d735de0e115eae89d3deadaa764ce8fad397e420bc968e97a7e84ac5"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0107,
+            "response_bytes": 2096,
+            "sha256": "3de89d1df4684c9650efb1619cc8ef28289185d4bd451bb6d769e6f0d0850c8e"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0104,
+            "response_bytes": 542,
+            "sha256": "1d264b0b98c31a17648dc1a9e9023c22bd7f06297c8d72e058cc7d175357663a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0093,
+            "response_bytes": 1416,
+            "sha256": "53530c9b9b85a87bdc044351fd38dcfa64503c7dd4d287c34f607ce0d4c18561"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0104,
+            "response_bytes": 2276,
+            "sha256": "64a6b08fe861a8654198676e479c8b879ce810bcde99af30faec125a04b2459e"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0125,
+            "response_bytes": 562,
+            "sha256": "d2161c4fea2171de5ca48c689060f2eb688034195ad623065ada650ec1032ecd"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0113,
+            "response_bytes": 1427,
+            "sha256": "3ca3bcfa19ec9ecdb1beee7e3169127e2d18315a6f4c6465a456d045cc637bd7"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0096,
+            "response_bytes": 2104,
+            "sha256": "b6e82ea60bf41c181f79c0623470a4df387d043e0411231cfa27cdb5de6ffe8d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+            "status": 403,
+            "elapsed_seconds": 0.0109,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0142,
+            "response_bytes": 1007,
+            "sha256": "f790c408818b2463cd52f04bff1aa8d433017d2ab4ff688d1fb1736ec10ddf8a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0098,
+            "response_bytes": 877,
+            "sha256": "699f6361ffe440d28a09a2a2b8d0ab4bf2ecf877c4d8aaf6ef0e53c17549355f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0105,
+            "response_bytes": 3064,
+            "sha256": "49ef523183cd607fbe6d760d100b40e765123f8bda87c8692cd919858412520d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0093,
+            "response_bytes": 1523,
+            "sha256": "cc2fca8019ec6119b0d97234b303f0710203a7012ee2fdf661af1ee29b3cf975"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0098,
+            "response_bytes": 771,
+            "sha256": "a71143a09678e05f44fd704447bdcaaa1d04f97a7bafcf4768e435d9b2a3c445"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0119,
+            "response_bytes": 1685,
+            "sha256": "d0609984799840853a353d6f473d58fcbb059b6e8dd84a2e30d493c768f15fd3"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.009,
+            "response_bytes": 2669,
+            "sha256": "25576663c2c9d9aef92b4da8c99225fb9512040a40b2c46352a44945ddd85abb"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.01,
+            "response_bytes": 1794,
+            "sha256": "4da5e8891a53044fde4dcb7e1fa9c8e9c0243f9437ff20f01d544dbe2f0c9df8"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0121,
+            "response_bytes": 2152,
+            "sha256": "c09efa3225d3518a94363ceb868a34ca7799ae724e87ab8d5183e9bb09ae8611"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0119,
+            "response_bytes": 3810,
+            "sha256": "e999456f70b353709cabae6f496589702aba62f7b8610ffb95db7e142e9e9ede"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/government/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0094,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/public/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0109,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0141,
+            "response_bytes": 1465,
+            "sha256": "0a0ad03bb676cba27178afd2ccdc3872bcc5dfe01cc013d6dfc6afa1e0e1fc3a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0102,
+            "response_bytes": 3426,
+            "sha256": "19cda75b1b0ae756f290a828b0916c48816489062047d6e21a566169ba166811"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/government/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0097,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/public/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0101,
+            "response_bytes": 979,
+            "sha256": "91d0bb4655a7de3da88ab1d4a86d9e1b350e22d9e4230dde90ea73fffb31ad29"
+          }
+        ]
+      },
+      {
+        "symbol": "ITC",
+        "basis": "consolidated",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/ITC/consolidated/",
+            "status": 200,
+            "elapsed_seconds": 0.0399,
+            "response_bytes": 249905,
+            "sha256": "17ad3e191c31ba9c15c19b09e05141541883e5039b48b540fec5354e0fc169b1"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0114,
+            "response_bytes": 2122,
+            "sha256": "e7ec24a067c6536153a7fa2a2b32cf7b25b9210971c648f4029853902124bce6"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0099,
+            "response_bytes": 539,
+            "sha256": "d6f0e0d4be457c10a4feec5cc36ce01879ce445339ecd1e79d2deb873d749a09"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0094,
+            "response_bytes": 1687,
+            "sha256": "09ae720941e5a8944f019c8ee6228db14a7ba01fcb415a876028ddfe7140a185"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0128,
+            "response_bytes": 2278,
+            "sha256": "69c93821b5456d976b82746bc6677aac8feb0b4758bc799502e14618ffc5e8a7"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0109,
+            "response_bytes": 557,
+            "sha256": "d007001450981275a6182248e8007ac412eca4eccb465a040ab83b4d4357261c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0094,
+            "response_bytes": 1942,
+            "sha256": "57f8d5b827cc8532fc81bd6484ba29709868da65fba60ba369a54891061806c2"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.009,
+            "response_bytes": 2105,
+            "sha256": "d2e00f9f83677ba229ce1979994dd02f1fb52d00e85e1ce5b87775ffa8439fd8"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+            "status": 403,
+            "elapsed_seconds": 0.0147,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0115,
+            "response_bytes": 1019,
+            "sha256": "a52c75cfb76b941642a4aae834ad0cd147232e48d53627a9ef665440eea13a58"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0093,
+            "response_bytes": 1149,
+            "sha256": "53dd49207072a0a9dea87ee2c0042c4abd70c1636c3e1220acb25e1fa252c134"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.019,
+            "response_bytes": 3073,
+            "sha256": "741d0723fef4dd81e7268ef150eecf21f826926968b26349b29154eb8e77fc65"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0094,
+            "response_bytes": 1526,
+            "sha256": "b88deddcb5e33cfc60411c29ecae576caa87d4843cfb5b209956c4bba62cc05d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0112,
+            "response_bytes": 776,
+            "sha256": "9554e75b7064a9c94e960b528f5e57787e0ef7add4c26d4af6b697664f0a2dbd"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0104,
+            "response_bytes": 1693,
+            "sha256": "8a526a1ca23e30f073c60ee5ceaa51ffa034faa53dd2b57dfbc473dfb0fbb78d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0095,
+            "response_bytes": 2622,
+            "sha256": "d38344fd92f678a64bb46eeb80c0f0b1f3cad34a9cb1d931e62e679e4cf71e87"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0114,
+            "response_bytes": 1803,
+            "sha256": "dd88a2e6543f3ec529b927d3569e327ac6bb104dab9dcd645dc43f500cc607d4"
+          }
+        ]
+      }
+    ],
+    "scrapling": [
+      {
+        "symbol": "TCS",
+        "basis": "standalone",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/TCS/",
+            "status": 200,
+            "elapsed_seconds": 0.1276,
+            "response_bytes": 283744,
+            "sha256": "ad4b990877d4166e9b3c2a9dd933aac1e50faa6e84cf6490c6837bbb1bb0156c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0837,
+            "response_bytes": 1449,
+            "sha256": "e81a91bbde3400148695aca131f96a9db849c0ee982d0257bad6d22610259375"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0863,
+            "response_bytes": 556,
+            "sha256": "df92a0dcba06d5eb84056d6e0fde2e27ecaf941a3813438d704ebc8a07131257"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0731,
+            "response_bytes": 1448,
+            "sha256": "7c8fce1537d2fb4621a1f289bb4b3136283638df5118ad5b27dcbd7af7fe036d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0889,
+            "response_bytes": 2136,
+            "sha256": "c9a030f715097a413232b2bcd9158a6ca2075c43a7f7fe8d002a3c9a9d403299"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0878,
+            "response_bytes": 563,
+            "sha256": "884e5899c580198f6ac1806a8151fa1ed4ffc5aea3b91460c1a2a21ed37a138c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0836,
+            "response_bytes": 1428,
+            "sha256": "5bd2851a1e2c0530f4f7497b63c2e2409c5bc468bc7193d80ace262e25b4917d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.079,
+            "response_bytes": 1324,
+            "sha256": "de77b0050866b2f3cdcd1108db281598ea10c708e52fd69408e16bdaa762466f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+            "status": 403,
+            "elapsed_seconds": 0.0765,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0818,
+            "response_bytes": 1031,
+            "sha256": "c73aa57a7732f5360230f3823196815034c1794d33ce915e297c79a2cb6bf6ba"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.087,
+            "response_bytes": 882,
+            "sha256": "48a9b4bf3770cae2ec865d8506e1a5b2ddf909b232aacf4693ba6ffda3c12524"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0768,
+            "response_bytes": 3072,
+            "sha256": "6d071dfc604c19b5e8c74568b4e46a8dd6122c076df101cab61405865ee72dbc"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0783,
+            "response_bytes": 1544,
+            "sha256": "5dec9824491a2d77bedb8a28341782fe6596f1efe5a884810ecfc6058fb84fc2"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.1156,
+            "response_bytes": 806,
+            "sha256": "2dd9751745a0534da6fb23119d9ed90c1bae261ba8adac767ab7b336028b6b72"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0819,
+            "response_bytes": 2215,
+            "sha256": "720c0c1ed2a498e0cbe9f5798f41f5aa228db42de4708bba0efe103c45ad7a5b"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0724,
+            "response_bytes": 2958,
+            "sha256": "6c996fde3815624721c18b6327160ad02e9a31c87469ffee00024827a7bb731c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0763,
+            "response_bytes": 1795,
+            "sha256": "88ce43e4a3cb532f5d24da9eeaa06c48c8f7e0b2586b4561362c8a62c7630cb7"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/promoters/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0888,
+            "response_bytes": 82946,
+            "sha256": "fa9a553463cfd0668ddfd7b2a087d35e31daf708f0c022c326c14052ed130d49"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0826,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.086,
+            "response_bytes": 991,
+            "sha256": "9c9ebda7def39db8b3474e6000a0bf6b91195da39a325164716f7a70466efdea"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/government/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0834,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/public/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0765,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/promoters/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.093,
+            "response_bytes": 56424,
+            "sha256": "1cc2708d45c0cb1d776da82ce24777bbe683215d166084a2264bff2fc5275a68"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0864,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.075,
+            "response_bytes": 751,
+            "sha256": "7bcac322d8ce35bd5134b47206d90c1cb8dba68e12a9634fe94e8eb86a4b5b1d"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/government/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.066,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/3365/investors/public/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0661,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          }
+        ]
+      },
+      {
+        "symbol": "TCS",
+        "basis": "consolidated",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/TCS/consolidated/",
+            "status": 200,
+            "elapsed_seconds": 0.1239,
+            "response_bytes": 283136,
+            "sha256": "67c2b9050fe3a938ea9a0efd0505347e3e5d1540830ace3dd4b2e2b9d1c61cc0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0991,
+            "response_bytes": 1365,
+            "sha256": "3d9b5367e8e04bdffab0014f31e521404d6bc0a4a06501382d46d32dfb03d0dc"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0991,
+            "response_bytes": 548,
+            "sha256": "135734ae28bc4767cf7f6db9cbaddeb4463dbfdb8966674603a8cd28a79f986f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.087,
+            "response_bytes": 1709,
+            "sha256": "ac84156d0e02a870ab14f81e76924391cbfcbbbb924302ce45ff83a292bf245a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.1086,
+            "response_bytes": 2140,
+            "sha256": "21b8a26f2f9d3c6568c81d727ca3932b5b2b6697306db5031025f0c24d165b6b"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0817,
+            "response_bytes": 562,
+            "sha256": "a1b5ccc47be84fea56d7c4c2756ae3b8b52438392abdc7abcf162bbb4421c8b6"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0791,
+            "response_bytes": 1700,
+            "sha256": "9177c6d2b3e5de5794377235d99e50b5605e4bd13628e46fcc4d4f8e153ac92c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0722,
+            "response_bytes": 1328,
+            "sha256": "e134988ce0e54625186a2f33697330f13130c2ee91b9fc61291a4187b140ff43"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+            "status": 403,
+            "elapsed_seconds": 0.0806,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0784,
+            "response_bytes": 1036,
+            "sha256": "21b1c8d50679330ee54511193412ec81573c487c40380094ad6238c50c440ed0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0925,
+            "response_bytes": 1165,
+            "sha256": "206890c25b7b0206d03c1aa0f7562f1eb0b417f524873e6a2da7d1e6a77ed0ab"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0804,
+            "response_bytes": 3141,
+            "sha256": "40eeab1322496ed513fdd61aabaad09a68143fe65979fac33f182a604938c5aa"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.1347,
+            "response_bytes": 1553,
+            "sha256": "171b25bf894a3b3bae5919b4ff35b04b40bba6dce082cfd4bede99e36171b33c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0775,
+            "response_bytes": 806,
+            "sha256": "65b27d6244d28d64314681a426082fff25c38558ed99b193bd58692683f2fde8"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0888,
+            "response_bytes": 2216,
+            "sha256": "9b27937b3d9bec5a913ad472f06cb2134ef6a0ec5cccc54fd88ab850d81552f0"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.09,
+            "response_bytes": 2451,
+            "sha256": "483b60b448e4878a93d8ecfdf1c735357e0bb7034fe7fe155d50054fd9d7758d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.1082,
+            "response_bytes": 1813,
+            "sha256": "73c26ecb3e0e837062e22a95c84ee4dcf666a8e63de29d0c72ab32628d92e52f"
+          }
+        ]
+      },
+      {
+        "symbol": "ITC",
+        "basis": "standalone",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/ITC/",
+            "status": 200,
+            "elapsed_seconds": 0.1791,
+            "response_bytes": 249703,
+            "sha256": "92a613df2959bfff7708b881f75c2ba300b7c15c2cb51c742a1e050c0bdac938"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0759,
+            "response_bytes": 2096,
+            "sha256": "3de89d1df4684c9650efb1619cc8ef28289185d4bd451bb6d769e6f0d0850c8e"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0832,
+            "response_bytes": 542,
+            "sha256": "1d264b0b98c31a17648dc1a9e9023c22bd7f06297c8d72e058cc7d175357663a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters",
+            "status": 200,
+            "elapsed_seconds": 0.0682,
+            "response_bytes": 1416,
+            "sha256": "53530c9b9b85a87bdc044351fd38dcfa64503c7dd4d287c34f607ce0d4c18561"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0779,
+            "response_bytes": 2276,
+            "sha256": "64a6b08fe861a8654198676e479c8b879ce810bcde99af30faec125a04b2459e"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0723,
+            "response_bytes": 562,
+            "sha256": "d2161c4fea2171de5ca48c689060f2eb688034195ad623065ada650ec1032ecd"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0808,
+            "response_bytes": 1427,
+            "sha256": "3ca3bcfa19ec9ecdb1beee7e3169127e2d18315a6f4c6465a456d045cc637bd7"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss",
+            "status": 200,
+            "elapsed_seconds": 0.0874,
+            "response_bytes": 2104,
+            "sha256": "b6e82ea60bf41c181f79c0623470a4df387d043e0411231cfa27cdb5de6ffe8d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+            "status": 403,
+            "elapsed_seconds": 0.0986,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0934,
+            "response_bytes": 1007,
+            "sha256": "f790c408818b2463cd52f04bff1aa8d433017d2ab4ff688d1fb1736ec10ddf8a"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0897,
+            "response_bytes": 877,
+            "sha256": "699f6361ffe440d28a09a2a2b8d0ab4bf2ecf877c4d8aaf6ef0e53c17549355f"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0833,
+            "response_bytes": 3064,
+            "sha256": "49ef523183cd607fbe6d760d100b40e765123f8bda87c8692cd919858412520d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.0829,
+            "response_bytes": 1523,
+            "sha256": "cc2fca8019ec6119b0d97234b303f0710203a7012ee2fdf661af1ee29b3cf975"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet",
+            "status": 200,
+            "elapsed_seconds": 0.077,
+            "response_bytes": 771,
+            "sha256": "a71143a09678e05f44fd704447bdcaaa1d04f97a7bafcf4768e435d9b2a3c445"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0825,
+            "response_bytes": 1685,
+            "sha256": "d0609984799840853a353d6f473d58fcbb059b6e8dd84a2e30d493c768f15fd3"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.1029,
+            "response_bytes": 2669,
+            "sha256": "25576663c2c9d9aef92b4da8c99225fb9512040a40b2c46352a44945ddd85abb"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+            "status": 200,
+            "elapsed_seconds": 0.0622,
+            "response_bytes": 1794,
+            "sha256": "4da5e8891a53044fde4dcb7e1fa9c8e9c0243f9437ff20f01d544dbe2f0c9df8"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0801,
+            "response_bytes": 2152,
+            "sha256": "c09efa3225d3518a94363ceb868a34ca7799ae724e87ab8d5183e9bb09ae8611"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0753,
+            "response_bytes": 3810,
+            "sha256": "e999456f70b353709cabae6f496589702aba62f7b8610ffb95db7e142e9e9ede"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/government/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0871,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/public/quarterly/",
+            "status": 200,
+            "elapsed_seconds": 0.0888,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0826,
+            "response_bytes": 1465,
+            "sha256": "0a0ad03bb676cba27178afd2ccdc3872bcc5dfe01cc013d6dfc6afa1e0e1fc3a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.088,
+            "response_bytes": 3426,
+            "sha256": "19cda75b1b0ae756f290a828b0916c48816489062047d6e21a566169ba166811"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/government/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0751,
+            "response_bytes": 2,
+            "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+          },
+          {
+            "url": "https://www.screener.in/api/3/1552/investors/public/yearly/",
+            "status": 200,
+            "elapsed_seconds": 0.0665,
+            "response_bytes": 979,
+            "sha256": "91d0bb4655a7de3da88ab1d4a86d9e1b350e22d9e4230dde90ea73fffb31ad29"
+          }
+        ]
+      },
+      {
+        "symbol": "ITC",
+        "basis": "consolidated",
+        "requests": [
+          {
+            "url": "https://www.screener.in/company/ITC/consolidated/",
+            "status": 200,
+            "elapsed_seconds": 0.1267,
+            "response_bytes": 249905,
+            "sha256": "7a9ce96b5d7331424a2b642bdd13c1cbedfc5c9ea9d1dfac6166f96c858d7b79"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.1112,
+            "response_bytes": 2122,
+            "sha256": "e7ec24a067c6536153a7fa2a2b32cf7b25b9210971c648f4029853902124bce6"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.075,
+            "response_bytes": 539,
+            "sha256": "d6f0e0d4be457c10a4feec5cc36ce01879ce445339ecd1e79d2deb873d749a09"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.075,
+            "response_bytes": 1687,
+            "sha256": "09ae720941e5a8944f019c8ee6228db14a7ba01fcb415a876028ddfe7140a185"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0804,
+            "response_bytes": 2278,
+            "sha256": "69c93821b5456d976b82746bc6677aac8feb0b4758bc799502e14618ffc5e8a7"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.2249,
+            "response_bytes": 557,
+            "sha256": "d007001450981275a6182248e8007ac412eca4eccb465a040ab83b4d4357261c"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.08,
+            "response_bytes": 1942,
+            "sha256": "57f8d5b827cc8532fc81bd6484ba29709868da65fba60ba369a54891061806c2"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.1117,
+            "response_bytes": 2105,
+            "sha256": "d2e00f9f83677ba229ce1979994dd02f1fb52d00e85e1ce5b87775ffa8439fd8"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+            "status": 403,
+            "elapsed_seconds": 0.0935,
+            "response_bytes": 0,
+            "error": "HTTP 403"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.1316,
+            "response_bytes": 1019,
+            "sha256": "a52c75cfb76b941642a4aae834ad0cd147232e48d53627a9ef665440eea13a58"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0844,
+            "response_bytes": 1149,
+            "sha256": "53dd49207072a0a9dea87ee2c0042c4abd70c1636c3e1220acb25e1fa252c134"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0663,
+            "response_bytes": 3073,
+            "sha256": "741d0723fef4dd81e7268ef150eecf21f826926968b26349b29154eb8e77fc65"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0803,
+            "response_bytes": 1526,
+            "sha256": "b88deddcb5e33cfc60411c29ecae576caa87d4843cfb5b209956c4bba62cc05d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0741,
+            "response_bytes": 776,
+            "sha256": "9554e75b7064a9c94e960b528f5e57787e0ef7add4c26d4af6b697664f0a2dbd"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0969,
+            "response_bytes": 1693,
+            "sha256": "8a526a1ca23e30f073c60ee5ceaa51ffa034faa53dd2b57dfbc473dfb0fbb78d"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.1,
+            "response_bytes": 2622,
+            "sha256": "d38344fd92f678a64bb46eeb80c0f0b1f3cad34a9cb1d931e62e679e4cf71e87"
+          },
+          {
+            "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+            "status": 200,
+            "elapsed_seconds": 0.0812,
+            "response_bytes": 1803,
+            "sha256": "dd88a2e6543f3ec529b927d3569e327ac6bb104dab9dcd645dc43f500cc607d4"
+          }
+        ]
+      }
+    ]
+  },
+  "scrapy_attempt": {
+    "framework_version": "2.19.0",
+    "persistent_worker": true,
+    "loopback_protocol_check": "passed",
+    "item_attempts": 2,
+    "adapter_timeouts_seconds": [
+      90.04,
+      90.05
+    ],
+    "source_status": null,
+    "note": "The worker did not return a live HTTP response. Do not interpret adapter 504s as source 504s."
+  },
+  "rss_measurement_limits": {
+    "urllib": null,
+    "curl_cffi": null,
+    "scrapling": 143.88,
+    "scrapy": null,
+    "note": "Only Scrapling had a valid sampled peak-process-tree measurement."
+  },
+  "invalidated_attempts": [
+    {
+      "artifact": "tmp/large-scale/live-scrapling-observations.json",
+      "items": 4,
+      "request_count": 74,
+      "invalidated": true,
+      "reason": "Passed Scrapling response.html_content instead of raw response.body; this made valid JSON endpoint bodies parse as non-JSON. A later probe confirmed valid JSON in response.body."
+    },
+    {
+      "artifact": "no completed observation file",
+      "engine": "scrapling",
+      "requests_sent_before_stop": 15,
+      "invalidated": true,
+      "reason": "Library defaults generated browser-like headers and a Google referer. The trial was stopped; the final run explicitly disabled these options."
+    }
+  ],
+  "request_observations": [
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/company/TCS/",
+      "status": 200,
+      "elapsed_seconds": 0.1305,
+      "response_bytes": 283744,
+      "sha256": "2ad2d67870832646ef803d60ab531f7588854adbfe1db677a68feb8482efe332"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0531,
+      "response_bytes": 1449,
+      "sha256": "e81a91bbde3400148695aca131f96a9db849c0ee982d0257bad6d22610259375"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0536,
+      "response_bytes": 556,
+      "sha256": "df92a0dcba06d5eb84056d6e0fde2e27ecaf941a3813438d704ebc8a07131257"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0546,
+      "response_bytes": 1448,
+      "sha256": "7c8fce1537d2fb4621a1f289bb4b3136283638df5118ad5b27dcbd7af7fe036d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0805,
+      "response_bytes": 2136,
+      "sha256": "c9a030f715097a413232b2bcd9158a6ca2075c43a7f7fe8d002a3c9a9d403299"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0555,
+      "response_bytes": 563,
+      "sha256": "884e5899c580198f6ac1806a8151fa1ed4ffc5aea3b91460c1a2a21ed37a138c"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0546,
+      "response_bytes": 1428,
+      "sha256": "5bd2851a1e2c0530f4f7497b63c2e2409c5bc468bc7193d80ace262e25b4917d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0533,
+      "response_bytes": 1324,
+      "sha256": "de77b0050866b2f3cdcd1108db281598ea10c708e52fd69408e16bdaa762466f"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+      "status": 403,
+      "elapsed_seconds": 0.0449,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0626,
+      "response_bytes": 1031,
+      "sha256": "c73aa57a7732f5360230f3823196815034c1794d33ce915e297c79a2cb6bf6ba"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0598,
+      "response_bytes": 882,
+      "sha256": "48a9b4bf3770cae2ec865d8506e1a5b2ddf909b232aacf4693ba6ffda3c12524"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0746,
+      "response_bytes": 3072,
+      "sha256": "6d071dfc604c19b5e8c74568b4e46a8dd6122c076df101cab61405865ee72dbc"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0622,
+      "response_bytes": 1544,
+      "sha256": "5dec9824491a2d77bedb8a28341782fe6596f1efe5a884810ecfc6058fb84fc2"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0482,
+      "response_bytes": 806,
+      "sha256": "2dd9751745a0534da6fb23119d9ed90c1bae261ba8adac767ab7b336028b6b72"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0709,
+      "response_bytes": 2215,
+      "sha256": "720c0c1ed2a498e0cbe9f5798f41f5aa228db42de4708bba0efe103c45ad7a5b"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0564,
+      "response_bytes": 2958,
+      "sha256": "6c996fde3815624721c18b6327160ad02e9a31c87469ffee00024827a7bb731c"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.056,
+      "response_bytes": 1795,
+      "sha256": "88ce43e4a3cb532f5d24da9eeaa06c48c8f7e0b2586b4561362c8a62c7630cb7"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/promoters/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.118,
+      "response_bytes": 82946,
+      "sha256": "fa9a553463cfd0668ddfd7b2a087d35e31daf708f0c022c326c14052ed130d49"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0553,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0576,
+      "response_bytes": 991,
+      "sha256": "9c9ebda7def39db8b3474e6000a0bf6b91195da39a325164716f7a70466efdea"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/government/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.049,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/public/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.059,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/promoters/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0683,
+      "response_bytes": 56424,
+      "sha256": "1cc2708d45c0cb1d776da82ce24777bbe683215d166084a2264bff2fc5275a68"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.049,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0497,
+      "response_bytes": 751,
+      "sha256": "7bcac322d8ce35bd5134b47206d90c1cb8dba68e12a9634fe94e8eb86a4b5b1d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/government/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0553,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/3365/investors/public/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0565,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/company/TCS/consolidated/",
+      "status": 200,
+      "elapsed_seconds": 0.1124,
+      "response_bytes": 283136,
+      "sha256": "63df7b31c6066dd3abf97c61af8a1f03ebd08797b50cbfa6c0168e553c74cf40"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0546,
+      "response_bytes": 1365,
+      "sha256": "3d9b5367e8e04bdffab0014f31e521404d6bc0a4a06501382d46d32dfb03d0dc"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0449,
+      "response_bytes": 548,
+      "sha256": "135734ae28bc4767cf7f6db9cbaddeb4463dbfdb8966674603a8cd28a79f986f"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0469,
+      "response_bytes": 1709,
+      "sha256": "ac84156d0e02a870ab14f81e76924391cbfcbbbb924302ce45ff83a292bf245a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0755,
+      "response_bytes": 2140,
+      "sha256": "21b8a26f2f9d3c6568c81d727ca3932b5b2b6697306db5031025f0c24d165b6b"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0675,
+      "response_bytes": 562,
+      "sha256": "a1b5ccc47be84fea56d7c4c2756ae3b8b52438392abdc7abcf162bbb4421c8b6"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0426,
+      "response_bytes": 1700,
+      "sha256": "9177c6d2b3e5de5794377235d99e50b5605e4bd13628e46fcc4d4f8e153ac92c"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.069,
+      "response_bytes": 1328,
+      "sha256": "e134988ce0e54625186a2f33697330f13130c2ee91b9fc61291a4187b140ff43"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+      "status": 403,
+      "elapsed_seconds": 0.0389,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0531,
+      "response_bytes": 1036,
+      "sha256": "21b1c8d50679330ee54511193412ec81573c487c40380094ad6238c50c440ed0"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0427,
+      "response_bytes": 1165,
+      "sha256": "206890c25b7b0206d03c1aa0f7562f1eb0b417f524873e6a2da7d1e6a77ed0ab"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0668,
+      "response_bytes": 3141,
+      "sha256": "40eeab1322496ed513fdd61aabaad09a68143fe65979fac33f182a604938c5aa"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.042,
+      "response_bytes": 1553,
+      "sha256": "171b25bf894a3b3bae5919b4ff35b04b40bba6dce082cfd4bede99e36171b33c"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0523,
+      "response_bytes": 806,
+      "sha256": "65b27d6244d28d64314681a426082fff25c38558ed99b193bd58692683f2fde8"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0461,
+      "response_bytes": 2216,
+      "sha256": "9b27937b3d9bec5a913ad472f06cb2134ef6a0ec5cccc54fd88ab850d81552f0"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0438,
+      "response_bytes": 2451,
+      "sha256": "483b60b448e4878a93d8ecfdf1c735357e0bb7034fe7fe155d50054fd9d7758d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0363,
+      "response_bytes": 1813,
+      "sha256": "73c26ecb3e0e837062e22a95c84ee4dcf666a8e63de29d0c72ab32628d92e52f"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/company/ITC/",
+      "status": 200,
+      "elapsed_seconds": 0.112,
+      "response_bytes": 249703,
+      "sha256": "d31ff5332f180affdf25ab6c651824efbd9af30193f1cccfd98a0c95b373ece0"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0403,
+      "response_bytes": 2096,
+      "sha256": "3de89d1df4684c9650efb1619cc8ef28289185d4bd451bb6d769e6f0d0850c8e"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0476,
+      "response_bytes": 542,
+      "sha256": "1d264b0b98c31a17648dc1a9e9023c22bd7f06297c8d72e058cc7d175357663a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0458,
+      "response_bytes": 1416,
+      "sha256": "53530c9b9b85a87bdc044351fd38dcfa64503c7dd4d287c34f607ce0d4c18561"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0468,
+      "response_bytes": 2276,
+      "sha256": "64a6b08fe861a8654198676e479c8b879ce810bcde99af30faec125a04b2459e"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0482,
+      "response_bytes": 562,
+      "sha256": "d2161c4fea2171de5ca48c689060f2eb688034195ad623065ada650ec1032ecd"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0472,
+      "response_bytes": 1427,
+      "sha256": "3ca3bcfa19ec9ecdb1beee7e3169127e2d18315a6f4c6465a456d045cc637bd7"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0393,
+      "response_bytes": 2104,
+      "sha256": "b6e82ea60bf41c181f79c0623470a4df387d043e0411231cfa27cdb5de6ffe8d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+      "status": 403,
+      "elapsed_seconds": 0.0411,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0514,
+      "response_bytes": 1007,
+      "sha256": "f790c408818b2463cd52f04bff1aa8d433017d2ab4ff688d1fb1736ec10ddf8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0475,
+      "response_bytes": 877,
+      "sha256": "699f6361ffe440d28a09a2a2b8d0ab4bf2ecf877c4d8aaf6ef0e53c17549355f"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0479,
+      "response_bytes": 3064,
+      "sha256": "49ef523183cd607fbe6d760d100b40e765123f8bda87c8692cd919858412520d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0447,
+      "response_bytes": 1523,
+      "sha256": "cc2fca8019ec6119b0d97234b303f0710203a7012ee2fdf661af1ee29b3cf975"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0767,
+      "response_bytes": 771,
+      "sha256": "a71143a09678e05f44fd704447bdcaaa1d04f97a7bafcf4768e435d9b2a3c445"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0379,
+      "response_bytes": 1685,
+      "sha256": "d0609984799840853a353d6f473d58fcbb059b6e8dd84a2e30d493c768f15fd3"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0463,
+      "response_bytes": 2669,
+      "sha256": "25576663c2c9d9aef92b4da8c99225fb9512040a40b2c46352a44945ddd85abb"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0476,
+      "response_bytes": 1794,
+      "sha256": "4da5e8891a53044fde4dcb7e1fa9c8e9c0243f9437ff20f01d544dbe2f0c9df8"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0525,
+      "response_bytes": 2152,
+      "sha256": "c09efa3225d3518a94363ceb868a34ca7799ae724e87ab8d5183e9bb09ae8611"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0489,
+      "response_bytes": 3810,
+      "sha256": "e999456f70b353709cabae6f496589702aba62f7b8610ffb95db7e142e9e9ede"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/government/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0445,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/public/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0428,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0555,
+      "response_bytes": 1465,
+      "sha256": "0a0ad03bb676cba27178afd2ccdc3872bcc5dfe01cc013d6dfc6afa1e0e1fc3a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0376,
+      "response_bytes": 3426,
+      "sha256": "19cda75b1b0ae756f290a828b0916c48816489062047d6e21a566169ba166811"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/government/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0471,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/3/1552/investors/public/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0438,
+      "response_bytes": 979,
+      "sha256": "91d0bb4655a7de3da88ab1d4a86d9e1b350e22d9e4230dde90ea73fffb31ad29"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/company/ITC/consolidated/",
+      "status": 200,
+      "elapsed_seconds": 0.0909,
+      "response_bytes": 249905,
+      "sha256": "fa1f5c369c50743008eb08403558d6b0a1b49413d834829154a2e7e3bcc2fa0a"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0764,
+      "response_bytes": 2122,
+      "sha256": "e7ec24a067c6536153a7fa2a2b32cf7b25b9210971c648f4029853902124bce6"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0471,
+      "response_bytes": 539,
+      "sha256": "d6f0e0d4be457c10a4feec5cc36ce01879ce445339ecd1e79d2deb873d749a09"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0682,
+      "response_bytes": 1687,
+      "sha256": "09ae720941e5a8944f019c8ee6228db14a7ba01fcb415a876028ddfe7140a185"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0441,
+      "response_bytes": 2278,
+      "sha256": "69c93821b5456d976b82746bc6677aac8feb0b4758bc799502e14618ffc5e8a7"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.046,
+      "response_bytes": 557,
+      "sha256": "d007001450981275a6182248e8007ac412eca4eccb465a040ab83b4d4357261c"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0516,
+      "response_bytes": 1942,
+      "sha256": "57f8d5b827cc8532fc81bd6484ba29709868da65fba60ba369a54891061806c2"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0409,
+      "response_bytes": 2105,
+      "sha256": "d2e00f9f83677ba229ce1979994dd02f1fb52d00e85e1ce5b87775ffa8439fd8"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+      "status": 403,
+      "elapsed_seconds": 0.0469,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0442,
+      "response_bytes": 1019,
+      "sha256": "a52c75cfb76b941642a4aae834ad0cd147232e48d53627a9ef665440eea13a58"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0691,
+      "response_bytes": 1149,
+      "sha256": "53dd49207072a0a9dea87ee2c0042c4abd70c1636c3e1220acb25e1fa252c134"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0586,
+      "response_bytes": 3073,
+      "sha256": "741d0723fef4dd81e7268ef150eecf21f826926968b26349b29154eb8e77fc65"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0459,
+      "response_bytes": 1526,
+      "sha256": "b88deddcb5e33cfc60411c29ecae576caa87d4843cfb5b209956c4bba62cc05d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0517,
+      "response_bytes": 776,
+      "sha256": "9554e75b7064a9c94e960b528f5e57787e0ef7add4c26d4af6b697664f0a2dbd"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0422,
+      "response_bytes": 1693,
+      "sha256": "8a526a1ca23e30f073c60ee5ceaa51ffa034faa53dd2b57dfbc473dfb0fbb78d"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0577,
+      "response_bytes": 2622,
+      "sha256": "d38344fd92f678a64bb46eeb80c0f0b1f3cad34a9cb1d931e62e679e4cf71e87"
+    },
+    {
+      "engine": "urllib",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0747,
+      "response_bytes": 1803,
+      "sha256": "dd88a2e6543f3ec529b927d3569e327ac6bb104dab9dcd645dc43f500cc607d4"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/company/TCS/",
+      "status": 200,
+      "elapsed_seconds": 0.2624,
+      "response_bytes": 283744,
+      "sha256": "4399770fc4ac10008918ae617e5d2df97b108caea1e5f3af7b35891958bbc55a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0109,
+      "response_bytes": 1449,
+      "sha256": "e81a91bbde3400148695aca131f96a9db849c0ee982d0257bad6d22610259375"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0098,
+      "response_bytes": 556,
+      "sha256": "df92a0dcba06d5eb84056d6e0fde2e27ecaf941a3813438d704ebc8a07131257"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0143,
+      "response_bytes": 1448,
+      "sha256": "7c8fce1537d2fb4621a1f289bb4b3136283638df5118ad5b27dcbd7af7fe036d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0108,
+      "response_bytes": 2136,
+      "sha256": "c9a030f715097a413232b2bcd9158a6ca2075c43a7f7fe8d002a3c9a9d403299"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0101,
+      "response_bytes": 563,
+      "sha256": "884e5899c580198f6ac1806a8151fa1ed4ffc5aea3b91460c1a2a21ed37a138c"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0101,
+      "response_bytes": 1428,
+      "sha256": "5bd2851a1e2c0530f4f7497b63c2e2409c5bc468bc7193d80ace262e25b4917d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0089,
+      "response_bytes": 1324,
+      "sha256": "de77b0050866b2f3cdcd1108db281598ea10c708e52fd69408e16bdaa762466f"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+      "status": 403,
+      "elapsed_seconds": 0.0102,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0094,
+      "response_bytes": 1031,
+      "sha256": "c73aa57a7732f5360230f3823196815034c1794d33ce915e297c79a2cb6bf6ba"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0096,
+      "response_bytes": 882,
+      "sha256": "48a9b4bf3770cae2ec865d8506e1a5b2ddf909b232aacf4693ba6ffda3c12524"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0099,
+      "response_bytes": 3072,
+      "sha256": "6d071dfc604c19b5e8c74568b4e46a8dd6122c076df101cab61405865ee72dbc"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0095,
+      "response_bytes": 1544,
+      "sha256": "5dec9824491a2d77bedb8a28341782fe6596f1efe5a884810ecfc6058fb84fc2"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0096,
+      "response_bytes": 806,
+      "sha256": "2dd9751745a0534da6fb23119d9ed90c1bae261ba8adac767ab7b336028b6b72"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0114,
+      "response_bytes": 2215,
+      "sha256": "720c0c1ed2a498e0cbe9f5798f41f5aa228db42de4708bba0efe103c45ad7a5b"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0095,
+      "response_bytes": 2958,
+      "sha256": "6c996fde3815624721c18b6327160ad02e9a31c87469ffee00024827a7bb731c"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0117,
+      "response_bytes": 1795,
+      "sha256": "88ce43e4a3cb532f5d24da9eeaa06c48c8f7e0b2586b4561362c8a62c7630cb7"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/promoters/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0133,
+      "response_bytes": 82946,
+      "sha256": "fa9a553463cfd0668ddfd7b2a087d35e31daf708f0c022c326c14052ed130d49"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0102,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0194,
+      "response_bytes": 991,
+      "sha256": "9c9ebda7def39db8b3474e6000a0bf6b91195da39a325164716f7a70466efdea"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/government/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0116,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/public/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0084,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/promoters/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0428,
+      "response_bytes": 56424,
+      "sha256": "1cc2708d45c0cb1d776da82ce24777bbe683215d166084a2264bff2fc5275a68"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.008,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0099,
+      "response_bytes": 751,
+      "sha256": "7bcac322d8ce35bd5134b47206d90c1cb8dba68e12a9634fe94e8eb86a4b5b1d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/government/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.009,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/3365/investors/public/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0097,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/company/TCS/consolidated/",
+      "status": 200,
+      "elapsed_seconds": 0.0416,
+      "response_bytes": 283136,
+      "sha256": "cd373c81b7b7cd54d66814328eccd378f1f77030a0751d95066a19fb41bac69b"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.008,
+      "response_bytes": 1365,
+      "sha256": "3d9b5367e8e04bdffab0014f31e521404d6bc0a4a06501382d46d32dfb03d0dc"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0132,
+      "response_bytes": 548,
+      "sha256": "135734ae28bc4767cf7f6db9cbaddeb4463dbfdb8966674603a8cd28a79f986f"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0087,
+      "response_bytes": 1709,
+      "sha256": "ac84156d0e02a870ab14f81e76924391cbfcbbbb924302ce45ff83a292bf245a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0114,
+      "response_bytes": 2140,
+      "sha256": "21b8a26f2f9d3c6568c81d727ca3932b5b2b6697306db5031025f0c24d165b6b"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0093,
+      "response_bytes": 562,
+      "sha256": "a1b5ccc47be84fea56d7c4c2756ae3b8b52438392abdc7abcf162bbb4421c8b6"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0086,
+      "response_bytes": 1700,
+      "sha256": "9177c6d2b3e5de5794377235d99e50b5605e4bd13628e46fcc4d4f8e153ac92c"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.009,
+      "response_bytes": 1328,
+      "sha256": "e134988ce0e54625186a2f33697330f13130c2ee91b9fc61291a4187b140ff43"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+      "status": 403,
+      "elapsed_seconds": 0.0102,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0096,
+      "response_bytes": 1036,
+      "sha256": "21b1c8d50679330ee54511193412ec81573c487c40380094ad6238c50c440ed0"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.011,
+      "response_bytes": 1165,
+      "sha256": "206890c25b7b0206d03c1aa0f7562f1eb0b417f524873e6a2da7d1e6a77ed0ab"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0122,
+      "response_bytes": 3141,
+      "sha256": "40eeab1322496ed513fdd61aabaad09a68143fe65979fac33f182a604938c5aa"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.014,
+      "response_bytes": 1553,
+      "sha256": "171b25bf894a3b3bae5919b4ff35b04b40bba6dce082cfd4bede99e36171b33c"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0116,
+      "response_bytes": 806,
+      "sha256": "65b27d6244d28d64314681a426082fff25c38558ed99b193bd58692683f2fde8"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0097,
+      "response_bytes": 2216,
+      "sha256": "9b27937b3d9bec5a913ad472f06cb2134ef6a0ec5cccc54fd88ab850d81552f0"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0104,
+      "response_bytes": 2451,
+      "sha256": "483b60b448e4878a93d8ecfdf1c735357e0bb7034fe7fe155d50054fd9d7758d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0126,
+      "response_bytes": 1813,
+      "sha256": "73c26ecb3e0e837062e22a95c84ee4dcf666a8e63de29d0c72ab32628d92e52f"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/company/ITC/",
+      "status": 200,
+      "elapsed_seconds": 0.0434,
+      "response_bytes": 249703,
+      "sha256": "cbb32e79d735de0e115eae89d3deadaa764ce8fad397e420bc968e97a7e84ac5"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0107,
+      "response_bytes": 2096,
+      "sha256": "3de89d1df4684c9650efb1619cc8ef28289185d4bd451bb6d769e6f0d0850c8e"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0104,
+      "response_bytes": 542,
+      "sha256": "1d264b0b98c31a17648dc1a9e9023c22bd7f06297c8d72e058cc7d175357663a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0093,
+      "response_bytes": 1416,
+      "sha256": "53530c9b9b85a87bdc044351fd38dcfa64503c7dd4d287c34f607ce0d4c18561"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0104,
+      "response_bytes": 2276,
+      "sha256": "64a6b08fe861a8654198676e479c8b879ce810bcde99af30faec125a04b2459e"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0125,
+      "response_bytes": 562,
+      "sha256": "d2161c4fea2171de5ca48c689060f2eb688034195ad623065ada650ec1032ecd"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0113,
+      "response_bytes": 1427,
+      "sha256": "3ca3bcfa19ec9ecdb1beee7e3169127e2d18315a6f4c6465a456d045cc637bd7"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0096,
+      "response_bytes": 2104,
+      "sha256": "b6e82ea60bf41c181f79c0623470a4df387d043e0411231cfa27cdb5de6ffe8d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+      "status": 403,
+      "elapsed_seconds": 0.0109,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0142,
+      "response_bytes": 1007,
+      "sha256": "f790c408818b2463cd52f04bff1aa8d433017d2ab4ff688d1fb1736ec10ddf8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0098,
+      "response_bytes": 877,
+      "sha256": "699f6361ffe440d28a09a2a2b8d0ab4bf2ecf877c4d8aaf6ef0e53c17549355f"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0105,
+      "response_bytes": 3064,
+      "sha256": "49ef523183cd607fbe6d760d100b40e765123f8bda87c8692cd919858412520d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0093,
+      "response_bytes": 1523,
+      "sha256": "cc2fca8019ec6119b0d97234b303f0710203a7012ee2fdf661af1ee29b3cf975"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0098,
+      "response_bytes": 771,
+      "sha256": "a71143a09678e05f44fd704447bdcaaa1d04f97a7bafcf4768e435d9b2a3c445"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0119,
+      "response_bytes": 1685,
+      "sha256": "d0609984799840853a353d6f473d58fcbb059b6e8dd84a2e30d493c768f15fd3"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.009,
+      "response_bytes": 2669,
+      "sha256": "25576663c2c9d9aef92b4da8c99225fb9512040a40b2c46352a44945ddd85abb"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.01,
+      "response_bytes": 1794,
+      "sha256": "4da5e8891a53044fde4dcb7e1fa9c8e9c0243f9437ff20f01d544dbe2f0c9df8"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0121,
+      "response_bytes": 2152,
+      "sha256": "c09efa3225d3518a94363ceb868a34ca7799ae724e87ab8d5183e9bb09ae8611"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0119,
+      "response_bytes": 3810,
+      "sha256": "e999456f70b353709cabae6f496589702aba62f7b8610ffb95db7e142e9e9ede"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/government/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0094,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/public/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0109,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0141,
+      "response_bytes": 1465,
+      "sha256": "0a0ad03bb676cba27178afd2ccdc3872bcc5dfe01cc013d6dfc6afa1e0e1fc3a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0102,
+      "response_bytes": 3426,
+      "sha256": "19cda75b1b0ae756f290a828b0916c48816489062047d6e21a566169ba166811"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/government/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0097,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/3/1552/investors/public/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0101,
+      "response_bytes": 979,
+      "sha256": "91d0bb4655a7de3da88ab1d4a86d9e1b350e22d9e4230dde90ea73fffb31ad29"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/company/ITC/consolidated/",
+      "status": 200,
+      "elapsed_seconds": 0.0399,
+      "response_bytes": 249905,
+      "sha256": "17ad3e191c31ba9c15c19b09e05141541883e5039b48b540fec5354e0fc169b1"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0114,
+      "response_bytes": 2122,
+      "sha256": "e7ec24a067c6536153a7fa2a2b32cf7b25b9210971c648f4029853902124bce6"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0099,
+      "response_bytes": 539,
+      "sha256": "d6f0e0d4be457c10a4feec5cc36ce01879ce445339ecd1e79d2deb873d749a09"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0094,
+      "response_bytes": 1687,
+      "sha256": "09ae720941e5a8944f019c8ee6228db14a7ba01fcb415a876028ddfe7140a185"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0128,
+      "response_bytes": 2278,
+      "sha256": "69c93821b5456d976b82746bc6677aac8feb0b4758bc799502e14618ffc5e8a7"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0109,
+      "response_bytes": 557,
+      "sha256": "d007001450981275a6182248e8007ac412eca4eccb465a040ab83b4d4357261c"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0094,
+      "response_bytes": 1942,
+      "sha256": "57f8d5b827cc8532fc81bd6484ba29709868da65fba60ba369a54891061806c2"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.009,
+      "response_bytes": 2105,
+      "sha256": "d2e00f9f83677ba229ce1979994dd02f1fb52d00e85e1ce5b87775ffa8439fd8"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+      "status": 403,
+      "elapsed_seconds": 0.0147,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0115,
+      "response_bytes": 1019,
+      "sha256": "a52c75cfb76b941642a4aae834ad0cd147232e48d53627a9ef665440eea13a58"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0093,
+      "response_bytes": 1149,
+      "sha256": "53dd49207072a0a9dea87ee2c0042c4abd70c1636c3e1220acb25e1fa252c134"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.019,
+      "response_bytes": 3073,
+      "sha256": "741d0723fef4dd81e7268ef150eecf21f826926968b26349b29154eb8e77fc65"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0094,
+      "response_bytes": 1526,
+      "sha256": "b88deddcb5e33cfc60411c29ecae576caa87d4843cfb5b209956c4bba62cc05d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0112,
+      "response_bytes": 776,
+      "sha256": "9554e75b7064a9c94e960b528f5e57787e0ef7add4c26d4af6b697664f0a2dbd"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0104,
+      "response_bytes": 1693,
+      "sha256": "8a526a1ca23e30f073c60ee5ceaa51ffa034faa53dd2b57dfbc473dfb0fbb78d"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0095,
+      "response_bytes": 2622,
+      "sha256": "d38344fd92f678a64bb46eeb80c0f0b1f3cad34a9cb1d931e62e679e4cf71e87"
+    },
+    {
+      "engine": "curl_cffi",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0114,
+      "response_bytes": 1803,
+      "sha256": "dd88a2e6543f3ec529b927d3569e327ac6bb104dab9dcd645dc43f500cc607d4"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/company/TCS/",
+      "status": 200,
+      "elapsed_seconds": 0.1276,
+      "response_bytes": 283744,
+      "sha256": "ad4b990877d4166e9b3c2a9dd933aac1e50faa6e84cf6490c6837bbb1bb0156c"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0837,
+      "response_bytes": 1449,
+      "sha256": "e81a91bbde3400148695aca131f96a9db849c0ee982d0257bad6d22610259375"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0863,
+      "response_bytes": 556,
+      "sha256": "df92a0dcba06d5eb84056d6e0fde2e27ecaf941a3813438d704ebc8a07131257"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0731,
+      "response_bytes": 1448,
+      "sha256": "7c8fce1537d2fb4621a1f289bb4b3136283638df5118ad5b27dcbd7af7fe036d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0889,
+      "response_bytes": 2136,
+      "sha256": "c9a030f715097a413232b2bcd9158a6ca2075c43a7f7fe8d002a3c9a9d403299"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0878,
+      "response_bytes": 563,
+      "sha256": "884e5899c580198f6ac1806a8151fa1ed4ffc5aea3b91460c1a2a21ed37a138c"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0836,
+      "response_bytes": 1428,
+      "sha256": "5bd2851a1e2c0530f4f7497b63c2e2409c5bc468bc7193d80ace262e25b4917d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.079,
+      "response_bytes": 1324,
+      "sha256": "de77b0050866b2f3cdcd1108db281598ea10c708e52fd69408e16bdaa762466f"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+      "status": 403,
+      "elapsed_seconds": 0.0765,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0818,
+      "response_bytes": 1031,
+      "sha256": "c73aa57a7732f5360230f3823196815034c1794d33ce915e297c79a2cb6bf6ba"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.087,
+      "response_bytes": 882,
+      "sha256": "48a9b4bf3770cae2ec865d8506e1a5b2ddf909b232aacf4693ba6ffda3c12524"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0768,
+      "response_bytes": 3072,
+      "sha256": "6d071dfc604c19b5e8c74568b4e46a8dd6122c076df101cab61405865ee72dbc"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0783,
+      "response_bytes": 1544,
+      "sha256": "5dec9824491a2d77bedb8a28341782fe6596f1efe5a884810ecfc6058fb84fc2"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.1156,
+      "response_bytes": 806,
+      "sha256": "2dd9751745a0534da6fb23119d9ed90c1bae261ba8adac767ab7b336028b6b72"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0819,
+      "response_bytes": 2215,
+      "sha256": "720c0c1ed2a498e0cbe9f5798f41f5aa228db42de4708bba0efe103c45ad7a5b"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0724,
+      "response_bytes": 2958,
+      "sha256": "6c996fde3815624721c18b6327160ad02e9a31c87469ffee00024827a7bb731c"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0763,
+      "response_bytes": 1795,
+      "sha256": "88ce43e4a3cb532f5d24da9eeaa06c48c8f7e0b2586b4561362c8a62c7630cb7"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/promoters/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0888,
+      "response_bytes": 82946,
+      "sha256": "fa9a553463cfd0668ddfd7b2a087d35e31daf708f0c022c326c14052ed130d49"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0826,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.086,
+      "response_bytes": 991,
+      "sha256": "9c9ebda7def39db8b3474e6000a0bf6b91195da39a325164716f7a70466efdea"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/government/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0834,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/public/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0765,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/promoters/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.093,
+      "response_bytes": 56424,
+      "sha256": "1cc2708d45c0cb1d776da82ce24777bbe683215d166084a2264bff2fc5275a68"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/foreign_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0864,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/domestic_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.075,
+      "response_bytes": 751,
+      "sha256": "7bcac322d8ce35bd5134b47206d90c1cb8dba68e12a9634fe94e8eb86a4b5b1d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/government/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.066,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/3365/investors/public/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0661,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/company/TCS/consolidated/",
+      "status": 200,
+      "elapsed_seconds": 0.1239,
+      "response_bytes": 283136,
+      "sha256": "67c2b9050fe3a938ea9a0efd0505347e3e5d1540830ace3dd4b2e2b9d1c61cc0"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0991,
+      "response_bytes": 1365,
+      "sha256": "3d9b5367e8e04bdffab0014f31e521404d6bc0a4a06501382d46d32dfb03d0dc"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0991,
+      "response_bytes": 548,
+      "sha256": "135734ae28bc4767cf7f6db9cbaddeb4463dbfdb8966674603a8cd28a79f986f"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.087,
+      "response_bytes": 1709,
+      "sha256": "ac84156d0e02a870ab14f81e76924391cbfcbbbb924302ce45ff83a292bf245a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.1086,
+      "response_bytes": 2140,
+      "sha256": "21b8a26f2f9d3c6568c81d727ca3932b5b2b6697306db5031025f0c24d165b6b"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0817,
+      "response_bytes": 562,
+      "sha256": "a1b5ccc47be84fea56d7c4c2756ae3b8b52438392abdc7abcf162bbb4421c8b6"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0791,
+      "response_bytes": 1700,
+      "sha256": "9177c6d2b3e5de5794377235d99e50b5605e4bd13628e46fcc4d4f8e153ac92c"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0722,
+      "response_bytes": 1328,
+      "sha256": "e134988ce0e54625186a2f33697330f13130c2ee91b9fc61291a4187b140ff43"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+      "status": 403,
+      "elapsed_seconds": 0.0806,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0784,
+      "response_bytes": 1036,
+      "sha256": "21b1c8d50679330ee54511193412ec81573c487c40380094ad6238c50c440ed0"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0925,
+      "response_bytes": 1165,
+      "sha256": "206890c25b7b0206d03c1aa0f7562f1eb0b417f524873e6a2da7d1e6a77ed0ab"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0804,
+      "response_bytes": 3141,
+      "sha256": "40eeab1322496ed513fdd61aabaad09a68143fe65979fac33f182a604938c5aa"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.1347,
+      "response_bytes": 1553,
+      "sha256": "171b25bf894a3b3bae5919b4ff35b04b40bba6dce082cfd4bede99e36171b33c"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0775,
+      "response_bytes": 806,
+      "sha256": "65b27d6244d28d64314681a426082fff25c38558ed99b193bd58692683f2fde8"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0888,
+      "response_bytes": 2216,
+      "sha256": "9b27937b3d9bec5a913ad472f06cb2134ef6a0ec5cccc54fd88ab850d81552f0"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.09,
+      "response_bytes": 2451,
+      "sha256": "483b60b448e4878a93d8ecfdf1c735357e0bb7034fe7fe155d50054fd9d7758d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/3365/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.1082,
+      "response_bytes": 1813,
+      "sha256": "73c26ecb3e0e837062e22a95c84ee4dcf666a8e63de29d0c72ab32628d92e52f"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/company/ITC/",
+      "status": 200,
+      "elapsed_seconds": 0.1791,
+      "response_bytes": 249703,
+      "sha256": "92a613df2959bfff7708b881f75c2ba300b7c15c2cb51c742a1e050c0bdac938"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0759,
+      "response_bytes": 2096,
+      "sha256": "3de89d1df4684c9650efb1619cc8ef28289185d4bd451bb6d769e6f0d0850c8e"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0832,
+      "response_bytes": 542,
+      "sha256": "1d264b0b98c31a17648dc1a9e9023c22bd7f06297c8d72e058cc7d175357663a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters",
+      "status": 200,
+      "elapsed_seconds": 0.0682,
+      "response_bytes": 1416,
+      "sha256": "53530c9b9b85a87bdc044351fd38dcfa64503c7dd4d287c34f607ce0d4c18561"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0779,
+      "response_bytes": 2276,
+      "sha256": "64a6b08fe861a8654198676e479c8b879ce810bcde99af30faec125a04b2459e"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0723,
+      "response_bytes": 562,
+      "sha256": "d2161c4fea2171de5ca48c689060f2eb688034195ad623065ada650ec1032ecd"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0808,
+      "response_bytes": 1427,
+      "sha256": "3ca3bcfa19ec9ecdb1beee7e3169127e2d18315a6f4c6465a456d045cc637bd7"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss",
+      "status": 200,
+      "elapsed_seconds": 0.0874,
+      "response_bytes": 2104,
+      "sha256": "b6e82ea60bf41c181f79c0623470a4df387d043e0411231cfa27cdb5de6ffe8d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss",
+      "status": 403,
+      "elapsed_seconds": 0.0986,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0934,
+      "response_bytes": 1007,
+      "sha256": "f790c408818b2463cd52f04bff1aa8d433017d2ab4ff688d1fb1736ec10ddf8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0897,
+      "response_bytes": 877,
+      "sha256": "699f6361ffe440d28a09a2a2b8d0ab4bf2ecf877c4d8aaf6ef0e53c17549355f"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0833,
+      "response_bytes": 3064,
+      "sha256": "49ef523183cd607fbe6d760d100b40e765123f8bda87c8692cd919858412520d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.0829,
+      "response_bytes": 1523,
+      "sha256": "cc2fca8019ec6119b0d97234b303f0710203a7012ee2fdf661af1ee29b3cf975"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet",
+      "status": 200,
+      "elapsed_seconds": 0.077,
+      "response_bytes": 771,
+      "sha256": "a71143a09678e05f44fd704447bdcaaa1d04f97a7bafcf4768e435d9b2a3c445"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0825,
+      "response_bytes": 1685,
+      "sha256": "d0609984799840853a353d6f473d58fcbb059b6e8dd84a2e30d493c768f15fd3"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.1029,
+      "response_bytes": 2669,
+      "sha256": "25576663c2c9d9aef92b4da8c99225fb9512040a40b2c46352a44945ddd85abb"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow",
+      "status": 200,
+      "elapsed_seconds": 0.0622,
+      "response_bytes": 1794,
+      "sha256": "4da5e8891a53044fde4dcb7e1fa9c8e9c0243f9437ff20f01d544dbe2f0c9df8"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0801,
+      "response_bytes": 2152,
+      "sha256": "c09efa3225d3518a94363ceb868a34ca7799ae724e87ab8d5183e9bb09ae8611"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0753,
+      "response_bytes": 3810,
+      "sha256": "e999456f70b353709cabae6f496589702aba62f7b8610ffb95db7e142e9e9ede"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/government/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0871,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/public/quarterly/",
+      "status": 200,
+      "elapsed_seconds": 0.0888,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/foreign_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0826,
+      "response_bytes": 1465,
+      "sha256": "0a0ad03bb676cba27178afd2ccdc3872bcc5dfe01cc013d6dfc6afa1e0e1fc3a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/domestic_institutions/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.088,
+      "response_bytes": 3426,
+      "sha256": "19cda75b1b0ae756f290a828b0916c48816489062047d6e21a566169ba166811"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/government/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0751,
+      "response_bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/3/1552/investors/public/yearly/",
+      "status": 200,
+      "elapsed_seconds": 0.0665,
+      "response_bytes": 979,
+      "sha256": "91d0bb4655a7de3da88ab1d4a86d9e1b350e22d9e4230dde90ea73fffb31ad29"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/company/ITC/consolidated/",
+      "status": 200,
+      "elapsed_seconds": 0.1267,
+      "response_bytes": 249905,
+      "sha256": "7a9ce96b5d7331424a2b642bdd13c1cbedfc5c9ea9d1dfac6166f96c858d7b79"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.1112,
+      "response_bytes": 2122,
+      "sha256": "e7ec24a067c6536153a7fa2a2b32cf7b25b9210971c648f4029853902124bce6"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.075,
+      "response_bytes": 539,
+      "sha256": "d6f0e0d4be457c10a4feec5cc36ce01879ce445339ecd1e79d2deb873d749a09"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=quarters&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.075,
+      "response_bytes": 1687,
+      "sha256": "09ae720941e5a8944f019c8ee6228db14a7ba01fcb415a876028ddfe7140a185"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Expenses&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0804,
+      "response_bytes": 2278,
+      "sha256": "69c93821b5456d976b82746bc6677aac8feb0b4758bc799502e14618ffc5e8a7"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Income&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.2249,
+      "response_bytes": 557,
+      "sha256": "d007001450981275a6182248e8007ac412eca4eccb465a040ab83b4d4357261c"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Net+Profit&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.08,
+      "response_bytes": 1942,
+      "sha256": "57f8d5b827cc8532fc81bd6484ba29709868da65fba60ba369a54891061806c2"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Material+Cost+%25&section=profit-loss&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.1117,
+      "response_bytes": 2105,
+      "sha256": "d2e00f9f83677ba229ce1979994dd02f1fb52d00e85e1ce5b87775ffa8439fd8"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Expenses+%25&section=profit-loss&consolidated=",
+      "status": 403,
+      "elapsed_seconds": 0.0935,
+      "response_bytes": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Borrowings&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.1316,
+      "response_bytes": 1019,
+      "sha256": "a52c75cfb76b941642a4aae834ad0cd147232e48d53627a9ef665440eea13a58"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Liabilities&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0844,
+      "response_bytes": 1149,
+      "sha256": "53dd49207072a0a9dea87ee2c0042c4abd70c1636c3e1220acb25e1fa252c134"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Fixed+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0663,
+      "response_bytes": 3073,
+      "sha256": "741d0723fef4dd81e7268ef150eecf21f826926968b26349b29154eb8e77fc65"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Other+Assets&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0803,
+      "response_bytes": 1526,
+      "sha256": "b88deddcb5e33cfc60411c29ecae576caa87d4843cfb5b209956c4bba62cc05d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Trade+receivables&section=balance-sheet&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0741,
+      "response_bytes": 776,
+      "sha256": "9554e75b7064a9c94e960b528f5e57787e0ef7add4c26d4af6b697664f0a2dbd"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Operating+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0969,
+      "response_bytes": 1693,
+      "sha256": "8a526a1ca23e30f073c60ee5ceaa51ffa034faa53dd2b57dfbc473dfb0fbb78d"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Investing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.1,
+      "response_bytes": 2622,
+      "sha256": "d38344fd92f678a64bb46eeb80c0f0b1f3cad34a9cb1d931e62e679e4cf71e87"
+    },
+    {
+      "engine": "scrapling",
+      "url": "https://www.screener.in/api/company/1552/schedules/?parent=Cash+from+Financing+Activity&section=cash-flow&consolidated=",
+      "status": 200,
+      "elapsed_seconds": 0.0812,
+      "response_bytes": 1803,
+      "sha256": "dd88a2e6543f3ec529b927d3569e327ac6bb104dab9dcd645dc43f500cc607d4"
+    },
+    {
+      "engine": "scrapy",
+      "url": "https://www.screener.in/company/TCS/",
+      "status": 504,
+      "elapsed_seconds": 90.0439,
+      "error": "scrapy retrieval failure: Persistent Scrapy worker timed out.",
+      "observation_type": "adapter_timeout_not_source_status"
+    },
+    {
+      "engine": "scrapy",
+      "url": "https://www.screener.in/company/TCS/consolidated/",
+      "status": 504,
+      "elapsed_seconds": 90.0465,
+      "error": "scrapy retrieval failure: Persistent Scrapy worker timed out.",
+      "observation_type": "adapter_timeout_not_source_status"
+    }
+  ]
+}

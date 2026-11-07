@@ -128,6 +128,52 @@ def test_detail_rate_limit_returns_explicit_partial(monkeypatch):
     assert result.sections['quarterly_results'].issues[0].code == 'detail_unavailable'
 
 
+def test_registration_required_detail_is_visible_and_public_result_complete():
+    class Restricted(FakeRetriever):
+        def get(self, url, **kwargs):
+            if '/schedules/' in url:
+                raise SourceError(403, 'Registration required.', registration_required=True)
+            return super().get(url, **kwargs)
+    result = scrape(ScreenerRequest(nse_symbol='MRF', reporting_basis='consolidated'), Restricted(), ['quarters'])
+    assert result.status == 'complete'
+    assert result.sections['quarterly_results'].status == 'ok'
+    assert result.sections['quarterly_results'].tables[0].rows[0].values[0].raw_text == '8,416'
+    assert result.sections['quarterly_results'].issues[0].code == 'detail_registration_required'
+    assert result.warnings[0].code == 'detail_registration_required'
+
+
+def test_only_explicit_same_origin_registration_redirect_classifies_403():
+    from screener_scraper.retrieval import registration_redirect
+    assert registration_redirect(403, {'X-Redirect-To': '/register/?next=%2Fcompany%2FTCS%2F'})
+    assert registration_redirect(403, {'x-redirect-to': '/login/'})
+    for status, target in [(403, ''), (403, '//evil.test/register/'),
+                           (403, '///register/'), (403, '//[malformed'),
+                           (403, 'https://evil.test/register/'), (403, '/other/'),
+                           (200, '/register/')]:
+        assert not registration_redirect(status, {'X-Redirect-To': target})
+
+
+@pytest.mark.parametrize('redirect,required', [('/register/?next=%2Fcompany%2FTCS%2F', True), ('', False)])
+def test_http_403_classification_uses_response_header(redirect, required):
+    from email.message import Message
+    from urllib.error import HTTPError
+    from screener_scraper.retrieval import Retriever
+    from screener_scraper.pacing import RequestGate
+    url = 'https://www.screener.in/api/company/3365/schedules/'
+    headers = Message()
+    if redirect:
+        headers['X-Redirect-To'] = redirect
+    class Opener:
+        def open(self, *args, **kwargs):
+            raise HTTPError(url, 403, 'Forbidden', headers, None)
+    retriever = Retriever(gate=RequestGate(interval=0))
+    retriever.opener = Opener()
+    with pytest.raises(SourceError) as exc:
+        retriever.get(url)
+    assert exc.value.status == 403
+    assert exc.value.registration_required is required
+
+
 def test_duration_badge_maps_to_detail_date_without_losing_label():
     class Duration(FakeRetriever):
         def get(self, url, **kwargs):
@@ -148,6 +194,30 @@ def test_growth_summary_preserves_relative_periods():
     assert table.periods[0].label == '10 Years:'
     assert table.periods[0].year is None
     assert table.rows[0].values[0].unit == 'percent'
+
+
+def test_sales_toggle_keeps_existing_hidden_rows_and_tooltips_are_metadata():
+    modified = HTML.replace("Company.showSchedule('Sales', 'quarters', this)", 'Company.toggleSalesGrowth()')
+    modified = modified.replace('</tbody>', '<tr hidden data-sales-growth><td>YoY Sales growth</td><td>8%</td><td></td></tr></tbody>')
+    modified = modified.replace('<td>OPM %</td>', '''<td><button onclick="Company.showSchedule('Expenses', 'quarters', this)">Expenses +</button></td>''')
+    class CurrentSource(FakeRetriever):
+        def get(self, url, **kwargs):
+            if '/schedules/' in url:
+                return json.dumps({'Employee Cost %': {'Jun 2026':'10%', 'TTM':None, 'tooltips':{}}}), url, 'http'
+            return modified, url, 'http'
+    result = scrape(ScreenerRequest(nse_symbol='MRF', reporting_basis='consolidated'), CurrentSource(), ['quarters'])
+    assert result.status == 'complete'
+    rows = result.sections['quarterly_results'].tables[0].rows
+    assert next(r for r in rows if r.label == 'YoY Sales growth').values[0].numeric_value == 8
+    assert rows[-1].label == 'Employee Cost %'
+
+
+def test_unknown_toggle_without_growth_rows_is_still_partial():
+    class MissingGrowth(FakeRetriever):
+        def get(self, url, **kwargs):
+            return HTML.replace("Company.showSchedule('Sales', 'quarters', this)", 'Company.toggleSalesGrowth()'), url, 'http'
+    result = scrape(ScreenerRequest(nse_symbol='MRF', reporting_basis='consolidated'), MissingGrowth(), ['quarters'])
+    assert result.status == 'partial'
 
 
 def test_all_sections_and_shareholding_tabs_are_kept_separate():

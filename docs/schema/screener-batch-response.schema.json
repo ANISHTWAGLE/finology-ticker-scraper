@@ -1,0 +1,395 @@
+{
+  "$defs": {
+    "Basis": {
+      "enum": [
+        "standalone",
+        "consolidated"
+      ],
+      "title": "Basis",
+      "type": "string"
+    },
+    "BatchItem": {
+      "additionalProperties": false,
+      "properties": {
+        "nse_symbol": {
+          "title": "Nse Symbol",
+          "type": "string"
+        },
+        "reporting_basis": {
+          "$ref": "#/$defs/Basis"
+        },
+        "status": {
+          "enum": [
+            "queued",
+            "running",
+            "complete",
+            "partial",
+            "failed",
+            "interrupted"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "persistence": {
+          "anyOf": [
+            {
+              "enum": [
+                "saved",
+                "skipped_partial",
+                "skipped_older",
+                "failed",
+                "not_configured"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Persistence"
+        },
+        "sections": {
+          "additionalProperties": {
+            "$ref": "#/$defs/SectionSummary"
+          },
+          "title": "Sections",
+          "type": "object"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        },
+        "scraped_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scraped At"
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Started At"
+        },
+        "finished_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finished At"
+        }
+      },
+      "required": [
+        "nse_symbol",
+        "reporting_basis",
+        "status"
+      ],
+      "title": "BatchItem",
+      "type": "object"
+    },
+    "ConstituentCompany": {
+      "additionalProperties": false,
+      "properties": {
+        "nse_symbol": {
+          "title": "Nse Symbol",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "isin": {
+          "title": "Isin",
+          "type": "string"
+        }
+      },
+      "required": [
+        "nse_symbol",
+        "name",
+        "isin"
+      ],
+      "title": "ConstituentCompany",
+      "type": "object"
+    },
+    "ConstituentSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        },
+        "fetched_at": {
+          "format": "date-time",
+          "title": "Fetched At",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "companies": {
+          "items": {
+            "$ref": "#/$defs/ConstituentCompany"
+          },
+          "title": "Companies",
+          "type": "array"
+        },
+        "warning": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Warning"
+        }
+      },
+      "required": [
+        "source_url",
+        "fetched_at",
+        "sha256",
+        "companies"
+      ],
+      "title": "ConstituentSnapshot",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "SectionSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "ok",
+            "partial",
+            "absent",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "tables": {
+          "title": "Tables",
+          "type": "integer"
+        },
+        "rows": {
+          "title": "Rows",
+          "type": "integer"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status",
+        "tables",
+        "rows",
+        "issues"
+      ],
+      "title": "SectionSummary",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "queued",
+        "running",
+        "complete",
+        "partial",
+        "failed",
+        "interrupted"
+      ],
+      "title": "State",
+      "type": "string"
+    },
+    "engine": {
+      "enum": [
+        "http",
+        "lightpanda"
+      ],
+      "title": "Engine",
+      "type": "string"
+    },
+    "concurrency": {
+      "title": "Concurrency",
+      "type": "integer"
+    },
+    "attempt": {
+      "title": "Attempt",
+      "type": "integer"
+    },
+    "total": {
+      "title": "Total",
+      "type": "integer"
+    },
+    "counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "propertyNames": {
+        "enum": [
+          "queued",
+          "running",
+          "complete",
+          "partial",
+          "failed",
+          "interrupted"
+        ]
+      },
+      "title": "Counts",
+      "type": "object"
+    },
+    "snapshot": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ConstituentSnapshot"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/BatchItem"
+      },
+      "title": "Items",
+      "type": "array"
+    },
+    "message": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Message"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "format": "date-time",
+      "title": "Updated At",
+      "type": "string"
+    },
+    "started_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Started At"
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Finished At"
+    }
+  },
+  "required": [
+    "id",
+    "state",
+    "engine",
+    "concurrency",
+    "attempt",
+    "total",
+    "counts",
+    "snapshot",
+    "items",
+    "message",
+    "created_at",
+    "updated_at"
+  ],
+  "title": "BatchJob",
+  "type": "object"
+}

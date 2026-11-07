@@ -60,3 +60,14 @@ JOIN screener_datasets d ON d.company_id=c.id
 JOIN screener_tables t ON t.company_id=d.company_id AND t.reporting_basis=d.reporting_basis
 JOIN screener_rows r ON r.table_id=t.id
 JOIN screener_values v ON v.row_id=r.id;
+
+CREATE TABLE IF NOT EXISTS screener_batch_jobs (
+    id uuid PRIMARY KEY,
+    state text NOT NULL CHECK (state IN
+        ('queued','running','complete','partial','failed','interrupted')),
+    created_at timestamptz NOT NULL DEFAULT now(),
+    updated_at timestamptz NOT NULL DEFAULT now(),
+    document jsonb NOT NULL
+);
+CREATE UNIQUE INDEX IF NOT EXISTS screener_one_active_batch
+    ON screener_batch_jobs ((true)) WHERE state IN ('queued','running');

@@ -30,13 +30,16 @@ def expansion_url(action, company_id, basis):
     raise ValueError('Unrecognized public row expansion control.')
 
 
-def expand(table, element, key, company_id, basis, retriever, section):
+def expand(table, element, key, company_id, basis, retriever, section, warnings):
     queue = [(b.get('onclick', ''), b.get_text(' ', strip=True))
              for b in element.select('button[onclick]')]
     visited = set()
     while queue:
         action, parent = queue.pop(0)
         try:
+            # This toggle only reveals rows already parsed from the parent HTML.
+            if action == 'Company.toggleSalesGrowth()' and element.select('tr[data-sales-growth]'):
+                continue
             url = expansion_url(action, company_id, basis)
             if url in visited:
                 continue
@@ -56,7 +59,7 @@ def expand(table, element, key, company_id, basis, retriever, section):
                 if len(set(aliases.values())) != len(aliases):
                     raise ValueError('Ambiguous detail period mapping.')
                 periods = set(aliases) | set(aliases.values())
-                if set(values) - periods - {'setAttributes', 'isExpandable'}:
+                if set(values) - periods - {'setAttributes', 'isExpandable', 'tooltips'}:
                     raise ValueError('Detail periods differ from the parent table.')
                 raw_values = [values.get(p.label, values.get(aliases[p.label])) for p in table.periods]
                 if any(v is not None and not isinstance(v, (str, int, float)) for v in raw_values):
@@ -66,8 +69,15 @@ def expand(table, element, key, company_id, basis, retriever, section):
                 if values.get('isExpandable'):
                     queue.append((values['isExpandable'], label))
         except (SourceError, ValueError, TypeError) as exc:
-            section.status = 'partial'
-            section.issues.append(Issue(code='detail_unavailable', message=f'{parent}: {exc}'))
+            code = ('detail_registration_required'
+                    if isinstance(exc, SourceError) and exc.registration_required
+                    else 'detail_unavailable')
+            issue = Issue(code=code, message=f'{parent}: {exc}')
+            section.issues.append(issue)
+            if code == 'detail_registration_required':
+                warnings.append(issue)
+            else:
+                section.status = 'partial'
             if isinstance(exc, SourceError) and exc.status == 429:
                 return
 
@@ -137,7 +147,7 @@ def scrape(body, retriever, section_keys):
                     name = tab['id']
                 table = parse_table(element, name, key, context, source)
                 section.tables.append(table)
-                expand(table, element, key, company_id, body.reporting_basis.value, retriever, section)
+                expand(table, element, key, company_id, body.reporting_basis.value, retriever, section, result.warnings)
                 if any(c.status == 'unparsed' and not c.links for r in table.rows for c in r.values):
                     section.status = 'partial'
                     section.issues.append(Issue(code='unparsed_value', message='Some source values are not numeric; raw text is retained.'))

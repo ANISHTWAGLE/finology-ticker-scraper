@@ -35,6 +35,12 @@ growth/return summary tables under profit & loss are included too. The response
 also returns the company name, NSE symbol and BSE code. Login-only and locked
 insight tables are outside the approved public scope.
 
+If a detail request returns HTTP 403 with Screener's explicit registration or
+login redirect, the scraper keeps the public parent row and records
+`detail_registration_required` in the section issues and dataset warnings.
+The public snapshot can still be saved. An unexplained 403 makes the result
+partial and prevents replacement of the saved snapshot.
+
 Periods retain their exact labels, with year/month when explicitly present.
 Duration badges such as `18m` remain in period labels even when the source's
 detail JSON uses only the month/year. TTM and relative growth periods are not

@@ -20,6 +20,8 @@ from .models import Issue, ScrapeRequest, ScrapeResponse
 from .service import failed_response, response_http_status, scrape_company
 from .retrieval import BrowserRetriever
 from screener_scraper.api import router as screener_router
+from screener_scraper.batch_api import router as screener_batch_router
+from screener_scraper.jobs import JobManager
 
 
 log = logging.getLogger(__name__)
@@ -30,12 +32,16 @@ async def lifespan(app):
     app.state.scrape_lock = asyncio.Lock()
     app.state.browser_worker = ThreadPoolExecutor(max_workers=1, thread_name_prefix="finology-browser")
     app.state.retriever = BrowserRetriever()
+    app.state.screener_jobs = JobManager()
     try:
         yield
     finally:
         try:
-            await asyncio.get_running_loop().run_in_executor(
-                app.state.browser_worker, app.state.retriever.close)
+            try:
+                await asyncio.get_running_loop().run_in_executor(None, app.state.screener_jobs.close)
+            finally:
+                await asyncio.get_running_loop().run_in_executor(
+                    app.state.browser_worker, app.state.retriever.close)
         finally:
             app.state.browser_worker.shutdown(wait=True)
 
@@ -45,6 +51,7 @@ app = FastAPI(title="Finology Financial Data Scraper", version="1.0.0", lifespan
               "Open POST /scrape below, select an example, click Try it out, edit the company and click Execute. "
               "Only company and reporting_basis are required.")
 app.include_router(screener_router)
+app.include_router(screener_batch_router)
 
 
 @app.exception_handler(RequestValidationError)

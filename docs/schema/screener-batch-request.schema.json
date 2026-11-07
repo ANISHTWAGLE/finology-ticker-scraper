@@ -1,0 +1,42 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "engine": {
+      "description": "Required comparison mode. HTTP has no browser fallback; Lightpanda handles every source request.",
+      "enum": [
+        "http",
+        "lightpanda"
+      ],
+      "title": "Engine",
+      "type": "string"
+    },
+    "concurrency": {
+      "default": 2,
+      "description": "Company/basis workers sharing two-second source request spacing.",
+      "maximum": 4,
+      "minimum": 1,
+      "title": "Concurrency",
+      "type": "integer"
+    },
+    "constituent_csv": {
+      "anyOf": [
+        {
+          "maxLength": 200000,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Optional official CSV text, used only if both downloads fail. Exactly 50 unique companies required.",
+      "title": "Constituent Csv"
+    }
+  },
+  "required": [
+    "engine"
+  ],
+  "title": "BatchRequest",
+  "type": "object"
+}

@@ -66,3 +66,66 @@ class ScreenerResponse(Model):
     sections: dict[str, Section] = Field(default_factory=dict)
     warnings: list[Issue] = Field(default_factory=list)
     persistence: Literal['not_configured', 'saved', 'skipped_partial', 'skipped_older', 'failed'] = 'not_configured'
+
+
+JobState = Literal['queued', 'running', 'complete', 'partial', 'failed', 'interrupted']
+
+
+class BatchRequest(Model):
+    engine: Literal['http', 'lightpanda'] = Field(description=
+        'Required comparison mode. HTTP has no browser fallback; Lightpanda handles every source request.')
+    concurrency: int = Field(default=2, ge=1, le=4, strict=True,
+                             description='Company/basis workers sharing two-second source request spacing.')
+    constituent_csv: str | None = Field(default=None, min_length=1, max_length=200000,
+        description='Optional official CSV text, used only if both downloads fail. Exactly 50 unique companies required.')
+
+
+class SectionSummary(Model):
+    status: Literal['ok', 'partial', 'absent', 'failed']
+    tables: int
+    rows: int
+    issues: list[Issue]
+
+
+class BatchItem(Model):
+    nse_symbol: str
+    reporting_basis: Basis
+    status: JobState
+    persistence: Literal['saved', 'skipped_partial', 'skipped_older', 'failed', 'not_configured'] | None = None
+    sections: dict[str, SectionSummary] = Field(default_factory=dict)
+    error: dict | None = None
+    source_url: str | None = None
+    scraped_at: datetime | None = None
+    started_at: datetime | None = None
+    finished_at: datetime | None = None
+
+
+class ConstituentCompany(Model):
+    nse_symbol: str
+    name: str
+    isin: str
+
+
+class ConstituentSnapshot(Model):
+    source_url: str
+    fetched_at: datetime
+    sha256: str
+    companies: list[ConstituentCompany]
+    warning: str | None = None
+
+
+class BatchJob(Model):
+    id: str
+    state: JobState
+    engine: Literal['http', 'lightpanda']
+    concurrency: int
+    attempt: int
+    total: int
+    counts: dict[JobState, int]
+    snapshot: ConstituentSnapshot | None
+    items: list[BatchItem]
+    message: str | None
+    created_at: datetime
+    updated_at: datetime
+    started_at: datetime | None = None
+    finished_at: datetime | None = None

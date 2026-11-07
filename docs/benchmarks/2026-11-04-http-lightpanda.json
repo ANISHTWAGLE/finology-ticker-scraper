@@ -1,0 +1,503 @@
+{
+  "date": "2026-11-04",
+  "request_spacing_seconds": 2,
+  "writes_financial_data": false,
+  "runs": [
+    {
+      "engine": "http",
+      "concurrency": 1,
+      "seconds": 106.25,
+      "symbols": [
+        "TCS",
+        "INFY"
+      ],
+      "reporting_basis": "consolidated",
+      "items": [
+        {
+          "nse_symbol": "TCS",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 23,
+              "issues": []
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 30,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener returned HTTP 403."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 37,
+              "issues": []
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 30,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "ok",
+              "tables": 2,
+              "rows": 679,
+              "issues": []
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T14:57:19.239103+00:00",
+          "source_url": "https://www.screener.in/company/TCS/consolidated/",
+          "seconds": 52.157
+        },
+        {
+          "nse_symbol": "INFY",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 23,
+              "issues": []
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 28,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener returned HTTP 403."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 30,
+              "issues": []
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 26,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "ok",
+              "tables": 2,
+              "rows": 120,
+              "issues": []
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T14:58:13.218170+00:00",
+          "source_url": "https://www.screener.in/company/INFY/consolidated/",
+          "seconds": 54.093
+        }
+      ]
+    },
+    {
+      "engine": "lightpanda",
+      "concurrency": 1,
+      "seconds": 108.922,
+      "symbols": [
+        "TCS",
+        "INFY"
+      ],
+      "reporting_basis": "consolidated",
+      "items": [
+        {
+          "nse_symbol": "TCS",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 23,
+              "issues": []
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 30,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener browser request failed (403)."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 37,
+              "issues": []
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 30,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "ok",
+              "tables": 2,
+              "rows": 679,
+              "issues": []
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T14:59:09.088510+00:00",
+          "source_url": "https://www.screener.in/company/TCS/consolidated/",
+          "seconds": 54.968
+        },
+        {
+          "nse_symbol": "INFY",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 23,
+              "issues": []
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 28,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener browser request failed (403)."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "partial",
+              "tables": 1,
+              "rows": 19,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Fixed Assets +: Lightpanda retrieval failed."
+                }
+              ]
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 26,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "partial",
+              "tables": 2,
+              "rows": 120,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Government +: Lightpanda retrieval failed."
+                }
+              ]
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T15:00:03.156350+00:00",
+          "source_url": "https://www.screener.in/company/INFY/consolidated/",
+          "seconds": 53.922
+        }
+      ]
+    },
+    {
+      "engine": "http",
+      "concurrency": 2,
+      "seconds": 107.219,
+      "symbols": [
+        "TCS",
+        "INFY"
+      ],
+      "reporting_basis": "consolidated",
+      "items": [
+        {
+          "nse_symbol": "TCS",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 23,
+              "issues": []
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 30,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener returned HTTP 403."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 37,
+              "issues": []
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 30,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "ok",
+              "tables": 2,
+              "rows": 679,
+              "issues": []
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T15:00:55.385117+00:00",
+          "source_url": "https://www.screener.in/company/TCS/consolidated/",
+          "seconds": 107.219
+        },
+        {
+          "nse_symbol": "INFY",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 23,
+              "issues": []
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 28,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener returned HTTP 403."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 30,
+              "issues": []
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 26,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "ok",
+              "tables": 2,
+              "rows": 120,
+              "issues": []
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T15:01:03.434247+00:00",
+          "source_url": "https://www.screener.in/company/INFY/consolidated/",
+          "seconds": 95.203
+        }
+      ]
+    },
+    {
+      "engine": "lightpanda",
+      "concurrency": 2,
+      "seconds": 108.844,
+      "symbols": [
+        "TCS",
+        "INFY"
+      ],
+      "reporting_basis": "consolidated",
+      "items": [
+        {
+          "nse_symbol": "TCS",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 23,
+              "issues": []
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 28,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Income +: Lightpanda retrieval failed."
+                },
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener browser request failed (403)."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 37,
+              "issues": []
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 30,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "ok",
+              "tables": 2,
+              "rows": 679,
+              "issues": []
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T15:02:48.414231+00:00",
+          "source_url": "https://www.screener.in/company/TCS/consolidated/",
+          "seconds": 108.844
+        },
+        {
+          "nse_symbol": "INFY",
+          "reporting_basis": "consolidated",
+          "status": "partial",
+          "persistence": "not_saved_benchmark",
+          "sections": {
+            "quarterly_results": {
+              "status": "partial",
+              "tables": 1,
+              "rows": 17,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Net Profit +: Lightpanda retrieval failed."
+                }
+              ]
+            },
+            "profit_and_loss": {
+              "status": "partial",
+              "tables": 5,
+              "rows": 28,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Other Expenses %: Screener browser request failed (403)."
+                }
+              ]
+            },
+            "balance_sheet": {
+              "status": "partial",
+              "tables": 1,
+              "rows": 19,
+              "issues": [
+                {
+                  "code": "detail_unavailable",
+                  "message": "Fixed Assets +: Lightpanda retrieval failed."
+                }
+              ]
+            },
+            "cash_flow": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 26,
+              "issues": []
+            },
+            "ratios": {
+              "status": "ok",
+              "tables": 1,
+              "rows": 6,
+              "issues": []
+            },
+            "shareholding_pattern": {
+              "status": "ok",
+              "tables": 2,
+              "rows": 120,
+              "issues": []
+            }
+          },
+          "error": null,
+          "scraped_at": "2026-11-04T15:02:46.066329+00:00",
+          "source_url": "https://www.screener.in/company/INFY/consolidated/",
+          "seconds": 84.828
+        }
+      ]
+    }
+  ]
+}
